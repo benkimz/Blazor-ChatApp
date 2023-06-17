@@ -1,0 +1,31 @@
+<a href="#list-chat" class="unread single active" data-toggle="list" role="tab">
+    <img class="avatar-md" src="@imageUrl" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar">
+    <div class="status">
+        <i class="material-icons online">fiber_manual_record</i>
+    </div>
+    <div class="new bg-yellow">
+        <span>+@newMessages</span>
+    </div> 
+    <div class="data">
+        <h5>@userName</h5>
+        <span>@stringTimeStamp</span>
+        <p>@textMessage</p>
+    </div>
+</a>
+
+@code{
+    [Parameter]
+    public string? imageUrl { get; set; }
+
+    [Parameter]
+    public int? newMessages { get; set; }
+
+    [Parameter]
+    public string? userName { get; set; }
+
+    [Parameter]
+    public string? stringTimeStamp { get; set; }
+
+    [Parameter]
+    public string? textMessage { get; set; }
+}

@@ -1,0 +1,105 @@
+.sidebar .discussions .single.active p,
+.sidebar .discussions .single.active span,
+.sidebar .discussions .single.unread p,
+.sidebar .discussions .single.unread span {
+  font-weight: 500 !important;
+  color: #212529;
+}
+.sidebar .contacts .contact .avatar-md,
+.sidebar .discussions .single .avatar-md,
+.sidebar .notifications .notification .avatar-md {
+  margin-right: 15px;
+}
+
+.sidebar .discussions .single.active p,
+.sidebar .discussions .single.active span,
+.sidebar .discussions .single.unread p,
+.sidebar .discussions .single.unread span {
+  font-weight: 500 !important;
+  color: #212529;
+}
+.sidebar .discussions a:hover {
+  color: inherit;
+}
+.sidebar .discussions .single {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 2px solid #fbfbfb;
+}
+.sidebar .discussions .single:hover {
+  border-bottom: 2px solid #2196f3;
+}
+.sidebar .discussions .single:last-of-type {
+  border-bottom: 2px solid transparent !important;
+}
+.sidebar .discussions .single.active {
+  border-bottom: 2px solid #2196f3;
+}
+.sidebar .discussions .single.active .material-icons {
+  color: #212529;
+}
+.sidebar .discussions .single .new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #f0d24b;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.04);
+  right: 0;
+  left: 39px;
+  margin-top: -12px;
+}
+.sidebar .discussions .single .new span {
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+.sidebar .discussions .single .status {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  left: 4px;
+  border: 5px solid #fff;
+  margin-top: 12px;
+  border-radius: 100%;
+}
+.sidebar .discussions .single .status .online {
+  color: #2196f3;
+}
+.sidebar .discussions .single .status .offline {
+  color: #bbb;
+}
+.sidebar .discussions .single .status .material-icons {
+  position: absolute;
+  left: -3px;
+  bottom: -3px;
+  font-size: 16px;
+}
+.sidebar .discussions .single .data {
+  width: 100%;
+}
+.sidebar .discussions .single .data h5 {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 8px;
+}
+.sidebar .discussions .single .data p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.sidebar .discussions .single .data span {
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,72 @@
+.sidebar {
+  background: #f8f8f8;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    padding: 30px 0 0;
+    height: 100vh;
+  }
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    width: 100%;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    height: 100vh;
+  }
+  
+  .sidebar .settings .categories .category:last-of-type {
+    display: none;
+  }
+  .sidebar {
+    min-width: 372px;
+    max-width: 372px;
+    overflow-y: scroll;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 5px;
+  }
+  .sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+  }
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #f5f5f5;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar {
+    padding: 30px 0 0;
+    height: 100%;
+    min-height: 100px;
+    max-height: 600px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+  }
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 468px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+

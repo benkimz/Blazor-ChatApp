@@ -17,7 +17,6 @@ C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\D
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\bundle\CommsWall.WebApp.styles.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\projectbundle\CommsWall.WebApp.bundle.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\CommsWall.WebApp.dll
@@ -27,3 +26,9 @@ C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\D
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\ref\CommsWall.WebApp.dll
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\bin\Debug\net6.0\package-lock.json
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\bin\Debug\net6.0\package.json
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Shared\SideView.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\MainPage\ChatHistory.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\NavMenu\NavMenu.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\SearchBox\SearchBox.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\UserStateCategories\UserStateCategories.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\MsgHistoryWindow\MsgHistoryWindow.razor.rz.scp.css

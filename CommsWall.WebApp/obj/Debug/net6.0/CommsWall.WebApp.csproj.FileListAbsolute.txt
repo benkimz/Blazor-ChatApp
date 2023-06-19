@@ -32,3 +32,4 @@ C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\D
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\SearchBox\SearchBox.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\UserStateCategories\UserStateCategories.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\MsgHistoryWindow\MsgHistoryWindow.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Shared\DialogueArea.razor.rz.scp.css

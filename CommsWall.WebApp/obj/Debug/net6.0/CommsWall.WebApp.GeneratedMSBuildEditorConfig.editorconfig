@@ -27,6 +27,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXENvbnRlbnRBcmVhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXE1lc3NhZ2VDb21wb3NlXE1lc3NhZ2VDb21wb3NlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxUb3BCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope = b-r1vrrax9ed
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/UserStateCategories/UserStateCategories.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxVc2VyU3RhdGVDYXRlZ29yaWVzXFVzZXJTdGF0ZUNhdGVnb3JpZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-yaxjqxewwm
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/DialogueArea.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ3VlQXJlYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-o7eci60t60
 
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

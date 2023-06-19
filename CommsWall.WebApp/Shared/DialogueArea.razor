@@ -1,0 +1,28 @@
+@using CommsWall.WebApp.Pages.DialogueArea.TopBar
+@using CommsWall.WebApp.Pages.DialogueArea.ContentArea
+@using CommsWall.WebApp.Pages.DialogueArea.MessageCompose
+
+<div class="main">
+    <div class="tab-content" id="nav-tabContent">
+        <div 
+            class="babble tab-pane fade active show"
+            id="list-chat" 
+            role="tabpanel" 
+            aria-labelledby="list-chat-list"
+        >
+            <div class="chat">
+
+                <TopBar />
+                
+                <ContentArea />
+
+                <MessageCompose />
+
+            </div>
+            @* 
+                TODO: Add start call screens
+                TODO: Add menu options
+             *@
+        </div>
+    </div>
+</div>

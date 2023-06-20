@@ -19,14 +19,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/ChatScreen.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdFNjcmVlbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXENvbnRlbnRBcmVhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,20 +31,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXFR5cGluZ0FuaW1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/QuickMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxRdWlja01lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxUb3BCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/_Imports.razor]
@@ -66,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope = b-2wqgnfcmxh
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXE1lc3NhZ2VDb21wb3NlXE1lc3NhZ2VDb21wb3NlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-i99j2twi5m
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/DropDownMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxEcm9wRG93bk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zf3aad2llm
 
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxNYWluUGFnZVxDaGF0SGlzdG9yeS5yYXpvcg==

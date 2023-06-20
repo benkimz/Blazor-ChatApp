@@ -32,6 +32,72 @@
     padding-right: 5px;
   }
 }
+/* _content/CommsWall.WebApp/Pages/DialogueArea/TopBar/DropDownMenu.razor.rz.scp.css */
+.dropdown-item[b-zf3aad2llm] {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.show > .btn.dropdown-toggle[b-zf3aad2llm] {
+  border: none;
+  box-shadow: none;
+  outline: 0;
+}
+.dropdown-item[b-zf3aad2llm],
+.dropdown-item:focus[b-zf3aad2llm],
+.dropdown-item:hover[b-zf3aad2llm] {
+  color: #bdbac2;
+  border-radius: 6px;
+}
+.dropdown-menu hr[b-zf3aad2llm] {
+  border-top: 2px solid #fbfbfb;
+  margin: 10px;
+}
+.dropdown-item[b-zf3aad2llm] {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dropdown-item:hover[b-zf3aad2llm] {
+  background: #f5f5f5;
+}
+.dropdown-item:focus[b-zf3aad2llm] {
+  background: 0 0;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+.create.btn:not(:disabled):not(.disabled):active[b-zf3aad2llm],
+.show > .btn.dropdown-toggle[b-zf3aad2llm],
+.sidebar .create[b-zf3aad2llm],
+.sidebar .create.btn:not(:disabled):not(.disabled).active[b-zf3aad2llm] {
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.04);
+}
+.dropdown-item.active[b-zf3aad2llm],
+.dropdown-item:active[b-zf3aad2llm] {
+  background: #2196f3 !important;
+  color: #fff !important;
+}
+.dropdown-menu .material-icons[b-zf3aad2llm] {
+  margin-right: 10px;
+}
+.main .chat .top .inside .dropdown .btn[b-zf3aad2llm] {
+  margin-right: 0;
+}
+.main .chat .top .inside .dropdown-menu-right[b-zf3aad2llm] {
+  right: 0 !important;
+  bottom: inherit !important;
+}
+.dropdown-menu[b-zf3aad2llm] {
+  min-width: 14rem;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+  border: none;
+}
 /* _content/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor.rz.scp.css */
 /* _content/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MsgHistoryWindow/MsgHistoryWindow.razor.rz.scp.css */
 .sidebar .discussions .single.active p[b-fax7kajzsv],

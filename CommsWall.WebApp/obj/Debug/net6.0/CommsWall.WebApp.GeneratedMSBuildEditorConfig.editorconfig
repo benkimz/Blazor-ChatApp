@@ -31,8 +31,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXENvbnRlbnRBcmVhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXE1lc3NhZ2VDb21wb3NlXE1lc3NhZ2VDb21wb3NlLnJhem9y
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/MessageContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXE1lc3NhZ2VDb250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/TypingAnimation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXFR5cGluZ0FuaW1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
@@ -54,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/DateSeparator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXERhdGVTZXBhcmF0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2wqgnfcmxh
+
+[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXE1lc3NhZ2VDb21wb3NlXE1lc3NhZ2VDb21wb3NlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-i99j2twi5m
 
 [C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxNYWluUGFnZVxDaGF0SGlzdG9yeS5yYXpvcg==

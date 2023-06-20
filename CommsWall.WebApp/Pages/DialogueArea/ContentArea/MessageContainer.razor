@@ -1,0 +1,48 @@
+@code {
+    [Parameter] @* category: inbox || outbox *@
+    public String? category { get; set; }
+
+    [Parameter]
+    public String? senderTitle { get; set; }
+
+    [Parameter]
+    public String? senderAvatarUrl { get; set; }
+
+    [Parameter]
+    public String? textMessage { get; set; }
+
+    [Parameter]
+    public String? timeStamp { get; set; }
+}
+
+@if (category == "inbox"){
+    <div class="message">
+        <img 
+            class="avatar-md" 
+            src="@senderAvatarUrl" 
+            data-toggle="tooltip" 
+            data-placement="top" 
+            title="@senderTitle" 
+            alt="avatar"
+        >
+        <div class="text-main">
+            <div class="text-group">
+                <div class="text">
+                    <p>@textMessage</p>
+                </div>
+            </div>
+            <span>@timeStamp</span>
+        </div>
+    </div>    
+}else{
+<div class="message me">
+    <div class="text-main">
+        <div class="text-group me">
+            <div class="text me">
+                <p>@textMessage</p>
+            </div>
+        </div>
+        <span>@timeStamp</span>
+    </div>
+</div>
+}

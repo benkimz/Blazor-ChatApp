@@ -1,0 +1,15 @@
+.main .chat .content .date[b-2wqgnfcmxh] {
+  display: flex;
+  align-items: center;
+  padding: 26px 0 46px;
+}
+.main .chat .content .date hr[b-2wqgnfcmxh] {
+  width: 100%;
+  border-top: 2px solid #fbfbfb;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main .chat .content .date span[b-2wqgnfcmxh] {
+  display: block;
+  padding: 0 20px;
+}

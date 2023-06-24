@@ -5,19 +5,36 @@
 
 <main>
     <div class="layout">
+        <CascadingValue Name="FontAwesomeIconStyle" Value="fontAwesomeIconStyle">
+            <NavMenu /> 
 
-        <NavMenu /> 
+            <SideView /> 
 
-        <SideView /> 
+            @* Will display: DialogueArea, Video Call data stream, 
+            Voice Call progress e.t.c *@
 
-        @* Will display: DialogueArea, Video Call data stream, 
-        Voice Call progress e.t.c *@
-        
-        @Body
+                @Body
 
-        @* 
-            TODO: Add an "add friends/ contacts" screen
-            TODO: Add create chats screen
-         *@
+            @* 
+                TODO: Add an "add friends/ contacts" screen
+                TODO: Add create chats screen
+            *@
+        </CascadingValue>
     </div>
 </main>
+
+@code {
+    public String fontAwesomeIconStyle { get; set; }
+    public class AppFonts
+    {
+        public static string? solid { get; set; }
+        public static string? regular { get; set; }
+    }
+    public MainLayout()
+    {
+        AppFonts.solid = "fa-solid fa-brand";
+        AppFonts.regular = "fa-regular fa-brand";
+
+        fontAwesomeIconStyle = "fa-solid fa-brand";
+    }
+}

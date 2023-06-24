@@ -36,3 +36,5 @@ C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\D
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\DialogueArea\MessageCompose\MessageCompose.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\DialogueArea\ContentArea\DateSeparator.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\DialogueArea\TopBar\DropDownMenu.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\NavMenu\UserAvatar.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\ChatHistory\NavMenu\MenuItem.razor.rz.scp.css

@@ -1,0 +1,49 @@
+<style>
+    .@activeSideViewPage{color: #ef0098!important;}
+</style>
+
+<div class="navigation">
+    <div class="container">
+        <div class="inside">
+            <div class="nav nav-tab menu">
+
+                <UserAvatar avatarUrl="img/avatars/avatar.jpg"/>
+
+                <CascadingValue Name="ActiveSideViewPage" Value="activeSideViewPage">
+                    <MenuItem 
+                        location="chat_history"
+                        faIcon="fa-comment"
+                        OnNavigate="@NavigateToSideViewPage"/>
+
+                    <MenuItem 
+                        location="notifications"
+                        faIcon="fa-bell"
+                        OnNavigate="@NavigateToSideViewPage"/>
+
+                    <MenuItem 
+                        location="theme"
+                        faIcon="fa-moon"
+                        OnNavigate="@NavigateToSideViewPage"/> 
+
+                    <MenuItem 
+                        location="settings"
+                        faIcon="fa-gear"
+                        OnNavigate="@NavigateToSideViewPage"/>                                                                   
+                </CascadingValue>
+            </div>
+        </div>
+    </div>
+</div>
+
+<SideView sidePage="@activeSideViewPage"/>
+
+@code {
+    public string? activeSideViewPage { get; set; } 
+
+    private void NavigateToSideViewPage(string? page){
+        activeSideViewPage = page ?? "#"; 
+        StateHasChanged();
+    }
+}
+
+

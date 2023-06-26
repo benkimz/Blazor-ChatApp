@@ -1,5 +1,6 @@
 @import url("open-iconic/font/css/open-iconic-bootstrap.min.css");
 @import url("fontawesome/css/fontawesome.min.css");
+@import url("fontawesome/css/v4-shims.css");
 @import url("fontawesome/css/solid.css");
 @import url("fontawesome/css/brands.css");
 @import url("fontawesome/css/regular.css");
@@ -59,7 +60,6 @@ p {
 ::-webkit-scrollbar-thumb {
   background: #e8e8e8;
 }
-
 @font-face {
   font-family: CircularStd;
   src: url(../fonts/circular/CircularStd-Black.eot);
@@ -2033,7 +2033,7 @@ input:checked + .slider:before {
   .navigation .inside .menu .material-icons {
     font-size: 30px;
     margin-bottom: 0;
-  }
+  } 
   .sidebar {
     padding: 30px 0 0;
     height: 100%;

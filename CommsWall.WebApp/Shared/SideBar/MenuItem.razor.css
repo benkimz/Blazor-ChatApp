@@ -1,0 +1,25 @@
+.side-nav-icon{
+    color: #38b38c;
+    display: inline-block;
+    line-height: 1;
+    font-size: 25px;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.side-nav-icon {
+  display: block;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .side-nav-icon {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+}

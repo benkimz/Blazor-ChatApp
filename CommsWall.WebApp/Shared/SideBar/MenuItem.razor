@@ -1,0 +1,28 @@
+<a data-toggle="tab" 
+    @onclick="@NavigateToSideViewPage"
+    @onclick:preventDefault>
+  <i class="side-nav-icon @location fa @FontAwesomeIconStyle @faIcon"></i>
+</a>
+
+@code {
+    [Parameter]
+    public string? location { get; set; } 
+
+    [Parameter]
+    public string? faIcon { get; set; } 
+
+    [CascadingParameter(Name = "FontAwesomeIconStyle")]
+    private string? FontAwesomeIconStyle { get; set; }
+
+    [CascadingParameter(Name = "ActiveSideViewPage")]
+    private string? activeSideViewPage { get; set; }
+
+    [Parameter]
+    public Action<string?>? OnNavigate { get; set; } 
+
+    private void NavigateToSideViewPage()
+    {
+      activeSideViewPage = location;
+      OnNavigate?.Invoke(activeSideViewPage);
+    }
+}

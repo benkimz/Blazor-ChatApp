@@ -4,9 +4,24 @@
   <div class="container">
     <div class="col-md-12">
       <div class="tab-content">
-        <ChatHistory />
+        @* 
+          TODO: Wire up more components here: 
+          TODO: [chat_history, settings, theme settings, notifications] *@ 
+
+        @switch (sidePage)
+        { 
+          case "chat_history":
+            <ChatHistory />
+            break;         
+          default:
+            <h1>Not Implemented</h1>
+            break;
+        }
       </div>
     </div>
   </div>
 </div>
 
+@code {
+  [Parameter] public string? sidePage { get; set; }
+}

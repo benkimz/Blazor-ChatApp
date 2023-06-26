@@ -1,14 +1,13 @@
 ﻿@inherits LayoutComponentBase
-@using CommsWall.WebApp.Pages.SideViewPages.ChatHistory.NavMenu
+@using CommsWall.WebApp.Shared.SideBar
 
 <PageTitle>CommsWall.WebApp</PageTitle>
 
 <main>
     <div class="layout">
         <CascadingValue Name="FontAwesomeIconStyle" Value="fontAwesomeIconStyle">
-            <NavMenu /> 
 
-            <SideView /> 
+                <SideBar />
 
             @* Will display: DialogueArea, Video Call data stream, 
             Voice Call progress e.t.c *@
@@ -24,7 +23,7 @@
 </main>
 
 @code {
-    public String fontAwesomeIconStyle { get; set; }
+    public string fontAwesomeIconStyle { get; set; }
     public class AppFonts
     {
         public static string? solid { get; set; }
@@ -34,7 +33,7 @@
     {
         AppFonts.solid = "fa-solid fa-brand";
         AppFonts.regular = "fa-regular fa-brand";
-
-        fontAwesomeIconStyle = "fa-solid fa-brand";
+        @* Switching the icons from being solid to regular and vice versa *@
+        fontAwesomeIconStyle = AppFonts.solid;
     }
 }

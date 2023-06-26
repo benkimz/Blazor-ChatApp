@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sMdbzy2gfX+sl9R/X65WHWkBF0pG3qYorlyyzx2vs74=",
+  "Hash": "cxqPO6Us9W9kV7egsmM6nYoKLpERnKsaZAOPh538oas=",
   "Source": "CommsWall.WebApp",
   "BasePath": "_content/CommsWall.WebApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CommsWall.WebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\css\\.TOREMOVE",
+      "SourceId": "CommsWall.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\",
+      "BasePath": "_content/CommsWall.WebApp",
+      "RelativePath": "css/.TOREMOVE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\.TOREMOVE"
     },
     {
       "Identity": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",

@@ -253,6 +253,104 @@
   background: #f5f5f5;
   border-radius: 100px;
 }
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/MainPage/Notifications.razor.rz.scp.css */
+/*Classes involving the class*/
+
+.sidebar .contacts .contact .avatar-md[b-tu743vz301],
+.sidebar .discussions .single .avatar-md[b-tu743vz301],
+.sidebar .notifications .notification .avatar-md[b-tu743vz301] {
+    margin-right: 15px;
+}
+
+.sidebar .notifications h1[b-tu743vz301] {
+    font-size: 24px;
+    font-weight: 800;
+    color: #212529;
+    border-bottom: 2px solid #fbfbfb;
+    padding-bottom: 18px;
+    margin-bottom: 0;
+}
+
+.sidebar .notifications a:hover[b-tu743vz301] {
+    color: inherit;
+}
+
+.sidebar .notifications .notification[b-tu743vz301] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 19px 0;
+    border-bottom: 2px solid #fbfbfb;
+}
+
+    .sidebar .notifications .notification:hover[b-tu743vz301] {
+        border-bottom: 2px solid #2196f3;
+    }
+
+    .sidebar .notifications .notification:last-of-type[b-tu743vz301] {
+        border-bottom: 2px solid transparent !important;
+    }
+
+    .sidebar .notifications .notification.active[b-tu743vz301] {
+        border-bottom: 2px solid #2196f3;
+    }
+
+        .sidebar .notifications .notification.active .material-icons[b-tu743vz301] {
+            color: #212529;
+        }
+
+    
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor.rz.scp.css */
+body[b-mmd9vbo5qu] {
+}
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor.rz.scp.css */
+body[b-u1ot8ovv2q] {
+}
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor.rz.scp.css */
+.sidebar .notifications .notification .status[b-7p2b2ce308] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    left: 4px;
+    border: 5px solid #fff;
+    margin-top: 12px;
+    border-radius: 100%;
+}
+
+    .sidebar .notifications .notification .status .online[b-7p2b2ce308] {
+        color: #2196f3;
+    }
+
+    .sidebar .notifications .notification .status .offline[b-7p2b2ce308] {
+        color: #bbb;
+    }
+
+    .sidebar .notifications .notification .status .material-icons[b-7p2b2ce308] {
+        position: absolute;
+        left: -3px;
+        bottom: -3px;
+        font-size: 16px;
+    }
+
+.sidebar .notifications .notification .data[b-7p2b2ce308] {
+    width: 100%;
+}
+
+    .sidebar .notifications .notification .data p[b-7p2b2ce308] {
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: #212529;
+        margin-bottom: 7px;
+    }
+
+    .sidebar .notifications .notification .data span[b-7p2b2ce308] {
+        float: left;
+        font-size: 15px;
+        color: #bdbac2;
+    }
 /* _content/CommsWall.WebApp/Shared/DialogueArea.razor.rz.scp.css */
 .main .chat .content .message .text .attachment .file a:hover[b-o7eci60t60],
 .main .start .content .callout span > a:hover[b-o7eci60t60] {

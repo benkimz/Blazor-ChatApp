@@ -1,0 +1,47 @@
+﻿/*Classes involving the class*/
+
+.sidebar .contacts .contact .avatar-md,
+.sidebar .discussions .single .avatar-md,
+.sidebar .notifications .notification .avatar-md {
+    margin-right: 15px;
+}
+
+.sidebar .notifications h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #212529;
+    border-bottom: 2px solid #fbfbfb;
+    padding-bottom: 18px;
+    margin-bottom: 0;
+}
+
+.sidebar .notifications a:hover {
+    color: inherit;
+}
+
+.sidebar .notifications .notification {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 19px 0;
+    border-bottom: 2px solid #fbfbfb;
+}
+
+    .sidebar .notifications .notification:hover {
+        border-bottom: 2px solid #2196f3;
+    }
+
+    .sidebar .notifications .notification:last-of-type {
+        border-bottom: 2px solid transparent !important;
+    }
+
+    .sidebar .notifications .notification.active {
+        border-bottom: 2px solid #2196f3;
+    }
+
+        .sidebar .notifications .notification.active .material-icons {
+            color: #212529;
+        }
+
+    

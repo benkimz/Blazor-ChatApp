@@ -1,4 +1,5 @@
 @using CommsWall.WebApp.Pages.SideViewPages.ChatHistory.MainPage
+@using CommsWall.WebApp.Pages.SideViewPages.Notifications.MainPage
 
 <div class="sidebar" id="sidebar">
   <div class="container">
@@ -12,7 +13,10 @@
         { 
           case "chat_history":
             <ChatHistory />
-            break;         
+            break;  
+          case "notifications":
+            <Notifications />
+            break;
           default:
             <h1>Not Implemented</h1>
             break;

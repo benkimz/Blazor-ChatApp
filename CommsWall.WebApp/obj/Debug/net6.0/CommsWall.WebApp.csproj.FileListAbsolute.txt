@@ -83,3 +83,7 @@ G:\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\ref\CommsWall.WebApp.dll
 G:\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\NotificationFilter\NotificationFilter.razor.rz.scp.css
 G:\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\NotificationGroup\NotificationGroup.razor.rz.scp.css
 G:\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\Notification\Notification.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\MainPage\Notifications.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\NotificationFilter\NotificationFilter.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\NotificationGroup\NotificationGroup.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\Notification\Notification.razor.rz.scp.css

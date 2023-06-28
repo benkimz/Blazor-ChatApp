@@ -7,18 +7,18 @@
       <div class="tab-content">
         @* 
           TODO: Wire up more components here: 
-          TODO: [chat_history, settings, theme settings, notifications] *@ 
-
+          TODO: [chat_history, settings, theme settings, notifications] 
+          *@
         @switch (sidePage)
         { 
           case "chat_history":
             <ChatHistory />
-            break;  
+            break;
           case "notifications":
             <Notifications />
-            break;
+            break;      
           default:
-            <h1>Not Implemented</h1>
+            <ChatHistory />
             break;
         }
       </div>

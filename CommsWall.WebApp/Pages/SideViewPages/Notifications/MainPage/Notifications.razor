@@ -2,16 +2,16 @@
 @using CommsWall.WebApp.Pages.SideViewPages.Notifications.NotificationFilter
 @using CommsWall.WebApp.Pages.SideViewPages.Notifications.NotificationGroup
 
-
-<!-- Start of Notifications -->
-<div id="notifications">
-	@*This is the class to make it invisible *@
-	@*class="tab-pane fade">*@
-	
-	@*This is the notifications filter component. It helps to filter the notifications by name.*@
+<div id="notifications"> @*class="tab-pane fade">*@
+	@*
+	<NotificationFilter/>: Filter with users input
+	<NotificationGroup/>: Filter to see these categories:
+		* All notifications
+		* Latest notifications
+		* Oldest notifications
+	*@
 	<NotificationFilter/>
 
-@*This is the notifications group component. It helps to group the notifications by read or unread status.*@
 	<NotificationGroup/>
 
 	<div class="notifications">
@@ -21,7 +21,6 @@
 		</div> 
 	</div>
 </div>
-<!-- End of Notifications -->
 
 @code {
 

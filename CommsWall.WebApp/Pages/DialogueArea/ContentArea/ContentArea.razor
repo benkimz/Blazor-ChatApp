@@ -1,58 +1,67 @@
+@inject IJSRuntime JSRuntime
+
 <div class="content" id="content">
-    <div class="container">
-        <div class="col-md-12">
+  <div class="container">
+    <div class="col-md-12">
+      <DateSeparator dateString="Yesterday" />
 
-            <DateSeparator dateString="Yesterday"/>
+      <MessageContainer
+        category="inbox"
+        senderTitle="Ben Kim"
+        senderAvatarUrl="img/avatars/avatar.jpg"
+        textMessage="I love you"
+        timeStamp="12:05 am"
+      />
 
-            <MessageContainer 
-                category="inbox"
-                senderTitle="Ben Kim"
-                senderAvatarUrl="img/avatars/avatar.jpg"
-                textMessage="I love you"
-                timeStamp="12:05 am"
-            /> 
+      <MessageContainer
+        category="outbox"
+        senderTitle="Ben Kim"
+        senderAvatarUrl="img/avatars/avatar.jpg"
+        textMessage="I love you too"
+        timeStamp="12:05 am"
+      />
 
-            <MessageContainer 
-                category="outbox"
-                senderTitle="Ben Kim"
-                senderAvatarUrl="img/avatars/avatar.jpg"
-                textMessage="I love you too"
-                timeStamp="12:05 am"
-            />
+      <DateSeparator dateString="Today" />
 
-            <DateSeparator dateString="Today"/>
+      <MessageContainer
+        category="inbox"
+        senderTitle="Ben Kim"
+        senderAvatarUrl="img/avatars/avatar.jpg"
+        textMessage="Morning"
+        timeStamp="06:05 am"
+      />
 
-            <MessageContainer 
-                category="inbox"
-                senderTitle="Ben Kim"
-                senderAvatarUrl="img/avatars/avatar.jpg"
-                textMessage="Morning"
-                timeStamp="06:05 am"
-            />    
+      <MessageContainer
+        category="outbox"
+        senderTitle="Ben Kim"
+        textMessage="Morning too, How are you?"
+        timeStamp="06:06 am"
+      />
 
-            <MessageContainer 
-                category="outbox"
-                senderTitle="Ben Kim"
-                textMessage="Morning too, How are you?"
-                timeStamp="06:06 am"
-            />                      
+      <MessageContainer
+        category="inbox"
+        senderTitle="Ben Kim"
+        senderAvatarUrl="img/avatars/avatar-female-5.jpg"
+        textMessage="We've got some killer ideas kicking about already."
+        timeStamp="06:08 am"
+      />
 
-            <MessageContainer 
-                category="inbox"
-                senderTitle="Ben Kim"
-                senderAvatarUrl="img/avatars/avatar-female-5.jpg"
-                textMessage="We've got some killer ideas kicking about already."
-                timeStamp="06:08 am"
-            />
+      <MessageContainer
+        category="outbox"
+        senderTitle="Ben Kim"
+        textMessage="Roger that boss!"
+        timeStamp="06:10 am"
+      />
 
-            <MessageContainer 
-                category="outbox"
-                senderTitle="Ben Kim"
-                textMessage="Roger that boss!"
-                timeStamp="06:10 am"
-            />
-
-            <TypingAnimation title="benkimz" avatarUrl="img/avatars/avatar.jpg"/>
-        </div>
+      <TypingAnimation title="benkimz" avatarUrl="img/avatars/avatar.jpg" />
     </div>
+  </div>
 </div>
+
+@code {
+    @* In case of a new message, we can use this function to scroll to bottom to read them *@ 
+    private async Task ScrollChatsToBottom()
+    {
+        await JSRuntime.InvokeAsync<object>("scrollToBottom", "content");
+    }
+} 

@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  .container[b-i99j2twi5m] {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container[b-i99j2twi5m] {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .container[b-i99j2twi5m] {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

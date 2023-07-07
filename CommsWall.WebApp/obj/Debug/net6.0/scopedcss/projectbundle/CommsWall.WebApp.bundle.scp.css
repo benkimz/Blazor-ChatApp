@@ -1036,7 +1036,7 @@ body[b-u1ot8ovv2q] {
   }
 }
 /* _content/CommsWall.WebApp/Shared/SideBar/MenuItem.razor.rz.scp.css */
-.side-nav-icon[b-9vy8ctmg52]{
+.sys-icons[b-9vy8ctmg52]{
     color: #38b38c;
     display: inline-block;
     line-height: 1;
@@ -1049,14 +1049,14 @@ body[b-u1ot8ovv2q] {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-.side-nav-icon[b-9vy8ctmg52] {
+.sys-icons[b-9vy8ctmg52] {
   display: block;
   font-size: 38px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
-  .side-nav-icon[b-9vy8ctmg52] {
+  .sys-icons[b-9vy8ctmg52] {
     font-size: 25px;
     margin-bottom: 0;
   }

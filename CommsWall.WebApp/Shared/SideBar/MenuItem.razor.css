@@ -1,4 +1,4 @@
-.side-nav-icon{
+.sys-icons{
     color: #38b38c;
     display: inline-block;
     line-height: 1;
@@ -11,14 +11,14 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-.side-nav-icon {
+.sys-icons {
   display: block;
   font-size: 38px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
-  .side-nav-icon {
+  .sys-icons {
     font-size: 25px;
     margin-bottom: 0;
   }

@@ -1,0 +1,47 @@
+/*Classes involving the class*/
+
+.sidebar .contacts .contact .avatar-md[b-tu743vz301],
+.sidebar .discussions .single .avatar-md[b-tu743vz301],
+.sidebar .notifications .notification .avatar-md[b-tu743vz301] {
+    margin-right: 15px;
+}
+
+.sidebar .notifications h1[b-tu743vz301] {
+    font-size: 24px;
+    font-weight: 800;
+    color: #212529;
+    border-bottom: 2px solid #fbfbfb;
+    padding-bottom: 18px;
+    margin-bottom: 0;
+}
+
+.sidebar .notifications a:hover[b-tu743vz301] {
+    color: inherit;
+}
+
+.sidebar .notifications .notification[b-tu743vz301] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 19px 0;
+    border-bottom: 2px solid #fbfbfb;
+}
+
+    .sidebar .notifications .notification:hover[b-tu743vz301] {
+        border-bottom: 2px solid #2196f3;
+    }
+
+    .sidebar .notifications .notification:last-of-type[b-tu743vz301] {
+        border-bottom: 2px solid transparent !important;
+    }
+
+    .sidebar .notifications .notification.active[b-tu743vz301] {
+        border-bottom: 2px solid #2196f3;
+    }
+
+        .sidebar .notifications .notification.active .material-icons[b-tu743vz301] {
+            color: #212529;
+        }
+
+    

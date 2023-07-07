@@ -1,3 +1,18 @@
+@using System.Linq
+
+@code {
+    public class SendMessageResult
+    {
+        public bool? IsMediaUploaded { get; set; }
+        public bool? IsMessageSent { get; set; }
+        public string? TextMessage { get; set; }
+        public int? FilesCount { get; set; }
+        public List<string?>? FileNames { get; set; }
+        public List<string?>? MediaLinks { get; set; }
+        public int? ErrorCode { get; set; }
+    }
+}
+
 <div class="container">
     <div class="col-md-12">
         <div class="bottom">
@@ -8,8 +23,31 @@
             </form>
             <label>
                 <input type="file">
-                <span class="btn attach d-sm-block d-none"><i class="material-icons">attach_file</i></span>
+                <span class="btn attach d-sm-block d-none">
+                    <i class="sys-icons fa fa-laptop-file">attach_file</i>
+                </span>
             </label> 
         </div>
     </div>
 </div>
+
+@code {
+    @* private List<File> files { get; set; } *@
+    @* public async Task HandleSendMessage()
+    {
+        //
+    } *@
+
+    public MessageCompose()
+    {
+        SendMessageResult r = new SendMessageResult{
+            FilesCount = 8,
+            IsMessageSent = true, 
+            IsMediaUploaded = true, 
+            TextMessage = "Hi there", 
+            ErrorCode = 200,
+            FileNames = new List<string?>{"kl", "jk"},
+            MediaLinks = new List<string?>{"lnk:kl", "lnk:jk"},
+        };
+    }
+}

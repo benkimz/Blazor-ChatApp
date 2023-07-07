@@ -1,0 +1,11 @@
+.layout[b-52k9a32jeu] {
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .layout[b-52k9a32jeu] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}

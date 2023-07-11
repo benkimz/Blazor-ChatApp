@@ -8,25 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\benkimz\\.nuget\\packages\\": {}
+    "/home/kennedy_muthuri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
+      "projectUniqueName": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/CommsWall.WebApp.csproj",
       "projectName": "CommsWall.WebApp",
-      "projectPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
-      "packagesPath": "C:\\Users\\benkimz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\obj\\",
+      "projectPath": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/CommsWall.WebApp.csproj",
+      "packagesPath": "/home/kennedy_muthuri/.nuget/packages/",
+      "outputPath": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\benkimz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/kennedy_muthuri/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -55,6 +54,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.7, 7.0.7]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -63,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.107/RuntimeIdentifierGraph.json"
       }
     }
   }

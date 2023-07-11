@@ -301,12 +301,6 @@
         }
 
     
-/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor.rz.scp.css */
-body[b-mmd9vbo5qu] {
-}
-/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor.rz.scp.css */
-body[b-u1ot8ovv2q] {
-}
 /* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor.rz.scp.css */
 .sidebar .notifications .notification .status[b-7p2b2ce308] {
     position: absolute;
@@ -351,6 +345,12 @@ body[b-u1ot8ovv2q] {
         font-size: 15px;
         color: #bdbac2;
     }
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor.rz.scp.css */
+body[b-mmd9vbo5qu] {
+}
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor.rz.scp.css */
+body[b-u1ot8ovv2q] {
+}
 /* _content/CommsWall.WebApp/Shared/DialogueArea.razor.rz.scp.css */
 .main .chat .content .message .text .attachment .file a:hover[b-o7eci60t60],
 .main .start .content .callout span > a:hover[b-o7eci60t60] {

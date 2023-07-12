@@ -8521,6 +8521,34 @@
       "PackagePath": "staticwebassets/img/avatars/avatar.jpg"
     },
     {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/appear.png",
+      "PackagePath": "staticwebassets/img/connections/appear.png"
+    },
+    {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/connect.png",
+      "PackagePath": "staticwebassets/img/connections/connect.png"
+    },
+    {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/drive.png",
+      "PackagePath": "staticwebassets/img/connections/drive.png"
+    },
+    {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/dropbox.png",
+      "PackagePath": "staticwebassets/img/connections/dropbox.png"
+    },
+    {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/lang.png",
+      "PackagePath": "staticwebassets/img/connections/lang.png"
+    },
+    {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/privacy.png",
+      "PackagePath": "staticwebassets/img/connections/privacy.png"
+    },
+    {
+      "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/connections/skrill.png",
+      "PackagePath": "staticwebassets/img/connections/skrill.png"
+    },
+    {
       "Id": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/wwwroot/img/favicon.png",
       "PackagePath": "staticwebassets/img/favicon.png"
     },

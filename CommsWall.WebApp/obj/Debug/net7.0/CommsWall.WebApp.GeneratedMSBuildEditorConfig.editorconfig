@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Settings/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9TZXR0aW5ncy9TZXR0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

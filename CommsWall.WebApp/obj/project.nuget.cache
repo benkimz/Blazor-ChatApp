@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Xr5s69NwXImRujoYw5zqd+y//wazC6/JSRjk1eiIN91X7mUQI2DT4HNLPssv/wA55+QzdjUjxkHCs5CTV6t6kA==",
+  "dgSpecHash": "Ty2ZvBBa1hReveqNA4eGawd1cF8TnF/47nlRE0Q2MPrh1nPnDb96C6d4uysmghAhjwJ23Oeo+OR2xg1xKItvoA==",
   "success": true,
   "projectFilePath": "G:\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file G:\\CommsWall\\CommsWall.WebApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

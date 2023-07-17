@@ -87,3 +87,8 @@ C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\D
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\NotificationFilter\NotificationFilter.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\NotificationGroup\NotificationGroup.razor.rz.scp.css
 C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\scopedcss\Pages\SideViewPages\Notifications\Notification\Notification.razor.rz.scp.css
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.CommsWall.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.CommsWall.WebApp.props
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CommsWall.WebApp.props
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CommsWall.WebApp.props
+C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\obj\Debug\net6.0\staticwebassets.pack.json

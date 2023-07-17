@@ -10,8 +10,7 @@
         senderTitle="Ben Kim"
         senderAvatarUrl="img/avatars/avatar.jpg"
         textMessage="I love you"
-        timeStamp="12:05 am"
-      />
+        timeStamp="12:05 am" />
 
       <MessageContainer
         category="outbox"
@@ -19,7 +18,7 @@
         senderAvatarUrl="img/avatars/avatar.jpg"
         textMessage="I love you too"
         timeStamp="12:05 am"
-      />
+        deliveryStatus="sent" />
 
       <DateSeparator dateString="Today" />
 
@@ -36,7 +35,7 @@
         senderTitle="Ben Kim"
         textMessage="Morning too, How are you?"
         timeStamp="06:06 am"
-      />
+        deliveryStatus="read" />
 
       <MessageContainer
         category="inbox"
@@ -44,14 +43,14 @@
         senderAvatarUrl="img/avatars/avatar-female-5.jpg"
         textMessage="We've got some killer ideas kicking about already."
         timeStamp="06:08 am"
-      />
+         />
 
       <MessageContainer
         category="outbox"
         senderTitle="Ben Kim"
         textMessage="Roger that boss!"
         timeStamp="06:10 am"
-      />
+        deliveryStatus="delivered" />
 
       <TypingAnimation title="benkimz" avatarUrl="img/avatars/avatar.jpg" />
     </div>
@@ -63,5 +62,5 @@
     private async Task ScrollChatsToBottom()
     {
         await JSRuntime.InvokeAsync<object>("scrollToBottom", "content");
-    }
+    } 
 } 

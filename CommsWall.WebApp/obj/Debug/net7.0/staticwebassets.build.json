@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lsA155hbUDcD7sTTGa1WSB/Gty1ouKl539eZPwQYaao=",
+  "Hash": "crTaHaHnzPerNB6YSOpDDAxVF8tPt7L0uget4ytdy5w=",
   "Source": "CommsWall.WebApp",
   "BasePath": "_content/CommsWall.WebApp",
   "Mode": "Default",
@@ -35309,12 +35309,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\favicon.ico",
       "SourceId": "CommsWall.WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\",
       "BasePath": "_content/CommsWall.WebApp",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35323,7 +35323,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\fonts\\circular\\CircularStd-Black.eot",
@@ -36429,23 +36429,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vendor\\popper.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\t-favicon.ico",
-      "SourceId": "CommsWall.WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\",
-      "BasePath": "_content/CommsWall.WebApp",
-      "RelativePath": "t-favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\t-favicon.ico"
     }
   ]
 }

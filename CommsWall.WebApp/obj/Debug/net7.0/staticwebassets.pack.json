@@ -8301,8 +8301,8 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
       "Id": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\fonts\\circular\\CircularStd-Black.eot",
@@ -8563,10 +8563,6 @@
     {
       "Id": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\js\\vendor\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\vendor\\popper.min.js"
-    },
-    {
-      "Id": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\wwwroot\\t-favicon.ico",
-      "PackagePath": "staticwebassets\\t-favicon.ico"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CommsWall.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",

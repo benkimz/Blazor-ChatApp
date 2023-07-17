@@ -4,11 +4,17 @@
     public class SendMessageResult
     {
         public bool? IsMediaUploaded { get; set; }
+
         public bool? IsMessageSent { get; set; }
+
         public string? TextMessage { get; set; }
+
         public int? FilesCount { get; set; }
+
         public List<string?>? FileNames { get; set; }
+
         public List<string?>? MediaLinks { get; set; }
+            
         public int? ErrorCode { get; set; }
     }
 }
@@ -24,7 +30,7 @@
             <label>
                 <input type="file">
                 <span class="btn attach d-sm-block d-none">
-                    <i class="sys-icons fa fa-laptop-file">attach_file</i>
+                    <i class="sys-icons fa fa-paperclip"></i>
                 </span>
             </label> 
         </div>

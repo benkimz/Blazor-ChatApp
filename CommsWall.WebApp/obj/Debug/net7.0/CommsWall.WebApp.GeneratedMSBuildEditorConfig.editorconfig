@@ -9,121 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CommsWall.WebApp
 build_property.RootNamespace = CommsWall.WebApp
-build_property.ProjectDir = G:\CommsWall\CommsWall.WebApp\
+build_property.ProjectDir = g:\CommsWall\CommsWall.WebApp\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\CommsWall\CommsWall.WebApp
+build_property.MSBuildProjectDirectory = g:\CommsWall\CommsWall.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/CommsWall/CommsWall.WebApp/App.razor]
+[g:/CommsWall/CommsWall.WebApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXENvbnRlbnRBcmVhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/MessageContainer.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/MessageContainer.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXE1lc3NhZ2VDb250YWluZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/TypingAnimation.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/TypingAnimation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXFR5cGluZ0FuaW1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/QuickMenu.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/QuickMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxRdWlja01lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxUb3BCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/Index.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/_Imports.razor]
+[g:/CommsWall/CommsWall.WebApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/DateSeparator.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/DateSeparator.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXERhdGVTZXBhcmF0b3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2wqgnfcmxh
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXE1lc3NhZ2VDb21wb3NlXE1lc3NhZ2VDb21wb3NlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-i99j2twi5m
 
-[G:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/DropDownMenu.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/DropDownMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxEcm9wRG93bk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zf3aad2llm
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxNYWluUGFnZVxDaGF0SGlzdG9yeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-4ftjtzhj5q
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MsgHistoryWindow/MsgHistoryWindow.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MsgHistoryWindow/MsgHistoryWindow.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxNc2dIaXN0b3J5V2luZG93XE1zZ0hpc3RvcnlXaW5kb3cucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fax7kajzsv
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/SearchBox/SearchBox.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/SearchBox/SearchBox.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxTZWFyY2hCb3hcU2VhcmNoQm94LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-r1vrrax9ed
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/UserStateCategories/UserStateCategories.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/UserStateCategories/UserStateCategories.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxVc2VyU3RhdGVDYXRlZ29yaWVzXFVzZXJTdGF0ZUNhdGVnb3JpZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-yaxjqxewwm
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/MainPage/Notifications.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/MainPage/Notifications.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE1haW5QYWdlXE5vdGlmaWNhdGlvbnMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tu743vz301
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE5vdGlmaWNhdGlvbkZpbHRlclxOb3RpZmljYXRpb25GaWx0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-mmd9vbo5qu
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE5vdGlmaWNhdGlvbkdyb3VwXE5vdGlmaWNhdGlvbkdyb3VwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-u1ot8ovv2q
 
-[G:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor]
+[g:/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE5vdGlmaWNhdGlvblxOb3RpZmljYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7p2b2ce308
 
-[G:/CommsWall/CommsWall.WebApp/Shared/DialogueArea.razor]
+[g:/CommsWall/CommsWall.WebApp/Shared/DialogueArea.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ3VlQXJlYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-o7eci60t60
 
-[G:/CommsWall/CommsWall.WebApp/Shared/MainLayout.razor]
+[g:/CommsWall/CommsWall.WebApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-52k9a32jeu
 
-[G:/CommsWall/CommsWall.WebApp/Shared/SideBar/MenuItem.razor]
+[g:/CommsWall/CommsWall.WebApp/Shared/SideBar/MenuItem.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJcTWVudUl0ZW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9vy8ctmg52
 
-[G:/CommsWall/CommsWall.WebApp/Shared/SideBar/SideBar.razor]
+[g:/CommsWall/CommsWall.WebApp/Shared/SideBar/SideBar.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJcU2lkZUJhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-7p2jgaokwz
 
-[G:/CommsWall/CommsWall.WebApp/Shared/SideBar/UserAvatar.razor]
+[g:/CommsWall/CommsWall.WebApp/Shared/SideBar/UserAvatar.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJcVXNlckF2YXRhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-963wffzkvb
 
-[G:/CommsWall/CommsWall.WebApp/Shared/SideView.razor]
+[g:/CommsWall/CommsWall.WebApp/Shared/SideView.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVWaWV3LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-iqrs9h3a9u
 
-[G:/CommsWall/CommsWall.WebApp/Pages/Error.cshtml]
+[g:/CommsWall/CommsWall.WebApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/_Host.cshtml]
+[g:/CommsWall/CommsWall.WebApp/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/CommsWall/CommsWall.WebApp/Pages/_Layout.cshtml]
+[g:/CommsWall/CommsWall.WebApp/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

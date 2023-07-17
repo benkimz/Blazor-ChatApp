@@ -13,6 +13,15 @@
 
     [Parameter]
     public String? timeStamp { get; set; }
+
+    [Parameter]
+    public String? deliveryStatus { get; set; }
+
+    [CascadingParameter(Name = "FontAwesomeIconStyle")]
+    private string? FontAwesomeIconStyle
+    {
+        get; set;
+    }
 }
 
 @if (category == "inbox"){
@@ -43,6 +52,37 @@
             </div>
         </div>
         <span>@timeStamp</span>
+        <span>@((MarkupString)GetMessageDeliveryStatusIcon())</span>
+            @*<span>
+                <i class="@FontAwesomeIconStyle @deliveryStatus"></i>
+            </span>*@
     </div>
 </div>
+}
+
+@* Delivery message status can be
+    read - read by the recipient (Icon - two blue ticks) - <i class="fa-check-double"></i>
+    sent - sent to the server (Icon - one blue tick) - <i class="fa-solid fa-check"></i>
+    delivered - delivered to the recipient (Icon - two grey ticks) - <i class="fa-solid fa-check-double"></i>
+    pending - message is pending to be sent (Icon - clock) - <i class="fa-regular fa-clock"></i>
+    failed- message failed to send (Icon - red exclamation mark) - <i class="fa-solid fa-exclamation-circle"></i>
+*@
+
+@code{
+    private string GetMessageDeliveryStatusIcon()
+    {
+        switch (deliveryStatus)
+        {
+            case "delivered":
+                return $"<i class = 'fa fa-check-double {FontAwesomeIconStyle}' style = 'font-size:1em;'></i>";
+            case "read": 
+                return $"<i class = 'fa fa-check-double {FontAwesomeIconStyle}' style = 'color: #2196F3; font-size:1em;' ></i>";
+            case "pending": 
+                return $"<i class = 'fa fa-clock {FontAwesomeIconStyle}' style = 'font-size:1em;'></i>";
+            case "failed": 
+                return $"<i class = 'fa fa-exclamation-circle {FontAwesomeIconStyle}' style = 'font-size:1em;'></i>";
+            default:
+                return $"<i class = 'fa fa-check {FontAwesomeIconStyle}' style = 'font-size:1em;'></i>";
+        }
+    }
 }

@@ -9,121 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CommsWall.WebApp
 build_property.RootNamespace = CommsWall.WebApp
-build_property.ProjectDir = C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp\
+build_property.ProjectDir = /workspaces/CommsWall/CommsWall.WebApp/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\benkimz\Desktop\benkimz.tech\Applantus\CommsWall\CommsWall.WebApp
+build_property.MSBuildProjectDirectory = /workspaces/CommsWall/CommsWall.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/App.razor]
+[/workspaces/CommsWall/CommsWall.WebApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXENvbnRlbnRBcmVhLnJhem9y
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL0NvbnRlbnRBcmVhL0NvbnRlbnRBcmVhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/MessageContainer.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXE1lc3NhZ2VDb250YWluZXIucmF6b3I=
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/MessageContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL0NvbnRlbnRBcmVhL01lc3NhZ2VDb250YWluZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/TypingAnimation.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXFR5cGluZ0FuaW1hdGlvbi5yYXpvcg==
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/TypingAnimation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL0NvbnRlbnRBcmVhL1R5cGluZ0FuaW1hdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/QuickMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxRdWlja01lbnUucmF6b3I=
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/QuickMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL1RvcEJhci9RdWlja01lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxUb3BCYXIucmF6b3I=
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/TopBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL1RvcEJhci9Ub3BCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/_Imports.razor]
+[/workspaces/CommsWall/CommsWall.WebApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/DateSeparator.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXENvbnRlbnRBcmVhXERhdGVTZXBhcmF0b3IucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-2wqgnfcmxh
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/DateSeparator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL0NvbnRlbnRBcmVhL0RhdGVTZXBhcmF0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-oyogumfl40
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXE1lc3NhZ2VDb21wb3NlXE1lc3NhZ2VDb21wb3NlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-i99j2twi5m
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/MessageCompose/MessageCompose.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL01lc3NhZ2VDb21wb3NlL01lc3NhZ2VDb21wb3NlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-nwmc0j4llj
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/DropDownMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9ndWVBcmVhXFRvcEJhclxEcm9wRG93bk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-zf3aad2llm
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/DialogueArea/TopBar/DropDownMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlhbG9ndWVBcmVhL1RvcEJhci9Ecm9wRG93bk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-k07l11k8ru
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxNYWluUGFnZVxDaGF0SGlzdG9yeS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-4ftjtzhj5q
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MainPage/ChatHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9DaGF0SGlzdG9yeS9NYWluUGFnZS9DaGF0SGlzdG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ekfrigqqro
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MsgHistoryWindow/MsgHistoryWindow.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxNc2dIaXN0b3J5V2luZG93XE1zZ0hpc3RvcnlXaW5kb3cucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-fax7kajzsv
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/MsgHistoryWindow/MsgHistoryWindow.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9DaGF0SGlzdG9yeS9Nc2dIaXN0b3J5V2luZG93L01zZ0hpc3RvcnlXaW5kb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-saj92xeo85
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/SearchBox/SearchBox.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxTZWFyY2hCb3hcU2VhcmNoQm94LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-r1vrrax9ed
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/SearchBox/SearchBox.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9DaGF0SGlzdG9yeS9TZWFyY2hCb3gvU2VhcmNoQm94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ruwp15d2h4
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/UserStateCategories/UserStateCategories.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xDaGF0SGlzdG9yeVxVc2VyU3RhdGVDYXRlZ29yaWVzXFVzZXJTdGF0ZUNhdGVnb3JpZXMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-yaxjqxewwm
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/UserStateCategories/UserStateCategories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9DaGF0SGlzdG9yeS9Vc2VyU3RhdGVDYXRlZ29yaWVzL1VzZXJTdGF0ZUNhdGVnb3JpZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wdpkz3yi3s
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/MainPage/Notifications.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE1haW5QYWdlXE5vdGlmaWNhdGlvbnMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-tu743vz301
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/MainPage/Notifications.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9Ob3RpZmljYXRpb25zL01haW5QYWdlL05vdGlmaWNhdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wyfw6x9fwr
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE5vdGlmaWNhdGlvbkZpbHRlclxOb3RpZmljYXRpb25GaWx0ZXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-mmd9vbo5qu
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9Ob3RpZmljYXRpb25zL05vdGlmaWNhdGlvbi9Ob3RpZmljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vw3etvnjvl
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE5vdGlmaWNhdGlvbkdyb3VwXE5vdGlmaWNhdGlvbkdyb3VwLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-u1ot8ovv2q
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9Ob3RpZmljYXRpb25zL05vdGlmaWNhdGlvbkZpbHRlci9Ob3RpZmljYXRpb25GaWx0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uhegyumwwe
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZVZpZXdQYWdlc1xOb3RpZmljYXRpb25zXE5vdGlmaWNhdGlvblxOb3RpZmljYXRpb24ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-7p2b2ce308
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lkZVZpZXdQYWdlcy9Ob3RpZmljYXRpb25zL05vdGlmaWNhdGlvbkdyb3VwL05vdGlmaWNhdGlvbkdyb3VwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ruv11rfy4r
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/DialogueArea.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ3VlQXJlYS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-o7eci60t60
+[/workspaces/CommsWall/CommsWall.WebApp/Shared/DialogueArea.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0RpYWxvZ3VlQXJlYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-z2gh0ux2hu
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-52k9a32jeu
+[/workspaces/CommsWall/CommsWall.WebApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-kwvbtdjscc
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/SideBar/MenuItem.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJcTWVudUl0ZW0ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-9vy8ctmg52
+[/workspaces/CommsWall/CommsWall.WebApp/Shared/SideBar/MenuItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NpZGVCYXIvTWVudUl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3sy6xd9z7g
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/SideBar/SideBar.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJcU2lkZUJhci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-7p2jgaokwz
+[/workspaces/CommsWall/CommsWall.WebApp/Shared/SideBar/SideBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NpZGVCYXIvU2lkZUJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-rg62y539yo
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/SideBar/UserAvatar.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJcVXNlckF2YXRhci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-963wffzkvb
+[/workspaces/CommsWall/CommsWall.WebApp/Shared/SideBar/UserAvatar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NpZGVCYXIvVXNlckF2YXRhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-pztjehfw3k
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Shared/SideView.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVWaWV3LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-iqrs9h3a9u
+[/workspaces/CommsWall/CommsWall.WebApp/Shared/SideView.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NpZGVWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ruvmd7jb09
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/benkimz.tech/Applantus/CommsWall/CommsWall.WebApp/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+[/workspaces/CommsWall/CommsWall.WebApp/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -2,9 +2,11 @@
 @using CommsWall.WebApp.Pages.SideViewPages.ChatHistory.UserStateCategories
 @using CommsWall.WebApp.Pages.SideViewPages.ChatHistory.MsgHistoryWindow
 
+@using CommsWall.WebApp.Controls.ChatControls
+
 <div class="#" id="members">
     @* class: tab-pane fade*@
-    <SearchBox />
+    <SearchHistory />
 
     <UserStateCategories />
  						
@@ -17,7 +19,7 @@
                 userName="Benard Kimani"
                 newMessages="5"
                 textMessage="filterDiscussions all unread single active"
-                stringTimeStamp="Mon 12:00 pm"/>
+                stringTimeStamp="Mon 12:00 pm" />
 
             <a href="#list-chat" class="filterDiscussions all unread single active" id="list-chat-list" data-toggle="list" role="tab">
                 <img class="avatar-md" src="img/avatars/avatar-female-1.jpg" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar">

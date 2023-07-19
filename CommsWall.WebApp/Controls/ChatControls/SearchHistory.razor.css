@@ -1,0 +1,24 @@
+.sidebar .search {
+    margin-bottom: 30px;
+}
+.sidebar .search .form-control {
+    padding: 0 15px 0 54px;
+    height: 56px;
+}
+.sidebar .search .loop {
+    position: absolute;
+    padding: 0 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+    margin-bottom: 0 !important;
+}
+.sidebar .search .loop .material-icons {
+    font-size: 25px;
+    font-weight: 600;
+    color: #bdbac2;
+}
+.sidebar .search .loop .material-icons.filter-list {
+    font-weight: 400;
+}

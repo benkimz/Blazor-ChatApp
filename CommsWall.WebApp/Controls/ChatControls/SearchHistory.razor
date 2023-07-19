@@ -1,0 +1,29 @@
+<div class="search">
+    <form class="form-inline position-relative">
+        <input 
+            type="search"
+            class="form-control" 
+            id="people" 
+            placeholder="Find conversations..." 
+            @bind-value="filterString" 
+            @bind-value:event="oninput" />
+        <button type="button" class="btn btn-link loop" @onclick="Search">
+            <i class="fa fa-solid fa-brand fa-search"></i>
+        </button>
+    </form>
+    <button class="btn create" data-toggle="modal" data-target="#exampleModalCenter">
+        <i class="material-icons">person_add</i>
+    </button>
+</div>
+
+@code {
+    private string? filterString { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnSearch { get; set; }
+    
+    private async Task Search()
+    {
+        await OnSearch.InvokeAsync(filterString);
+    }
+}

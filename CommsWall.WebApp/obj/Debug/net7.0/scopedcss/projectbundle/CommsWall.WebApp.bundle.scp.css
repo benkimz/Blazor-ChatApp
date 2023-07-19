@@ -1,3 +1,28 @@
+/* _content/CommsWall.WebApp/Controls/ChatControls/SearchHistory.razor.rz.scp.css */
+.sidebar .search[b-pv5igu242a] {
+    margin-bottom: 30px;
+}
+.sidebar .search .form-control[b-pv5igu242a] {
+    padding: 0 15px 0 54px;
+    height: 56px;
+}
+.sidebar .search .loop[b-pv5igu242a] {
+    position: absolute;
+    padding: 0 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+    margin-bottom: 0 !important;
+}
+.sidebar .search .loop .material-icons[b-pv5igu242a] {
+    font-size: 25px;
+    font-weight: 600;
+    color: #bdbac2;
+}
+.sidebar .search .loop .material-icons.filter-list[b-pv5igu242a] {
+    font-weight: 400;
+}
 /* _content/CommsWall.WebApp/Pages/DialogueArea/ContentArea/DateSeparator.razor.rz.scp.css */
 .main .chat .content .date[b-2wqgnfcmxh] {
   display: flex;

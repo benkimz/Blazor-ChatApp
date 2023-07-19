@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj": {}
+    "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\.github\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj": {
+    "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\.github\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\.github\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
         "projectName": "CommsWall.WebApp",
-        "projectPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
+        "projectPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\.github\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
         "packagesPath": "C:\\Users\\benkimz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.WebApp\\obj\\",
+        "outputPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\.github\\CommsWall\\CommsWall.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\benkimz\\AppData\\Roaming\\NuGet\\NuGet.Config"

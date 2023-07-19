@@ -1,5 +1,5 @@
 <style>
-    .@activeSideViewPage{color: #ef0098!important;}
+    .@activeSideViewPage{color: #675f87!important;}
 </style>
 
 <div class="navigation">
@@ -14,6 +14,16 @@
                         location="chat_history"
                         faIcon="fa-comment"
                         OnNavigate="@NavigateToSideViewPage"/>
+
+                    <MenuItem 
+                        location="groups"
+                        faIcon="fa-user-friends"
+                        OnNavigate="@NavigateToSideViewPage"/>
+
+                    <MenuItem 
+                        location="broadcast"
+                        faIcon="fa-broadcast-tower"
+                        OnNavigate="@NavigateToSideViewPage"/>                        
 
                     <MenuItem 
                         location="notifications"

@@ -18,9 +18,9 @@ namespace CommsWall.Core.ChatAggregate.AppUser
 
         public string AvatarUrl { get; set; }
 
-        public ICollection<ChatGroup> UserGroups { get; set; }
+        public IEnumerable<ChatGroup> UserGroups { get; set; }
 
-        public ICollection<ChatMessage> UserMessages { get; set; }
+        public IEnumerable<ChatMessage> UserMessages { get; set; }
 
         public int UserId { get; set; }
     }

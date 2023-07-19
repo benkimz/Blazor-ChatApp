@@ -12,9 +12,15 @@ namespace CommsWall.Core.ChatAggregate.ChatGroup
     {
         public string GroupName { get; set; }
 
-        public AppUser Admin { get; set; }
+        public AppUser GroupAdmin { get; set; }
 
-        public ICollection<ChatMessage> GroupMessages { get; set; }
+        public string GroupDescription { get; set; } 
+
+        public string GroupAvatar { get; set; }
+
+        public IEnumerable<AppUser> GroupMembers { get; set; }
+
+        public IEnumerable<ChatMessage> GroupMessages { get; set; }
 
         public int GroupId { get; set; }
     }

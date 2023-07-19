@@ -1062,7 +1062,7 @@ body[b-u1ot8ovv2q] {
 }
 /* _content/CommsWall.WebApp/Shared/SideBar/MenuItem.razor.rz.scp.css */
 .sys-icons[b-9vy8ctmg52]{
-    color: #38b38c;
+    color: #2196F3;
     display: inline-block;
     line-height: 1;
     font-size: 25px;
@@ -1076,13 +1076,13 @@ body[b-u1ot8ovv2q] {
 }
 .sys-icons[b-9vy8ctmg52] {
   display: block;
-  font-size: 38px;
+  font-size: 30px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
   .sys-icons[b-9vy8ctmg52] {
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 0;
   }
 }
@@ -1102,21 +1102,13 @@ body[b-u1ot8ovv2q] {
 }
 .navigation .inside .menu .material-icons[b-7p2jgaokwz] {
   display: block;
-  font-size: 45px;
+  font-size: 30px!important;
   margin-bottom: 40px;
 }
 .navigation .inside .menu .material-icons.active[b-7p2jgaokwz] {
   color: #2196f3;
 }
-.navigation .inside .menu .power:hover[b-7p2jgaokwz] {
-  color: #dc3545;
-}
-.navigation .inside .menu .power .material-icons[b-7p2jgaokwz] {
-  display: block;
-  font-size: 45px;
-  font-weight: 600;
-  margin-bottom: 0;
-}
+
 .navigation .inside .menu .mode:hover[b-7p2jgaokwz] {
   color: #2196f3;
 }
@@ -1201,7 +1193,7 @@ body[b-u1ot8ovv2q] {
     margin-right: 0;
   }
   .navigation .inside .menu .material-icons[b-7p2jgaokwz] {
-    font-size: 30px;
+    font-size: 25px!important;
     margin-bottom: 0;
   }
 }

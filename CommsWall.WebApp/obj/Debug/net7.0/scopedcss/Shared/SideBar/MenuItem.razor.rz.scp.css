@@ -1,5 +1,5 @@
 .sys-icons[b-9vy8ctmg52]{
-    color: #38b38c;
+    color: #2196F3;
     display: inline-block;
     line-height: 1;
     font-size: 25px;
@@ -13,13 +13,13 @@
 }
 .sys-icons[b-9vy8ctmg52] {
   display: block;
-  font-size: 38px;
+  font-size: 30px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
   .sys-icons[b-9vy8ctmg52] {
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 0;
   }
 }

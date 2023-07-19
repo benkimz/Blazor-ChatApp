@@ -13,21 +13,13 @@
 }
 .navigation .inside .menu .material-icons[b-7p2jgaokwz] {
   display: block;
-  font-size: 45px;
+  font-size: 30px!important;
   margin-bottom: 40px;
 }
 .navigation .inside .menu .material-icons.active[b-7p2jgaokwz] {
   color: #2196f3;
 }
-.navigation .inside .menu .power:hover[b-7p2jgaokwz] {
-  color: #dc3545;
-}
-.navigation .inside .menu .power .material-icons[b-7p2jgaokwz] {
-  display: block;
-  font-size: 45px;
-  font-weight: 600;
-  margin-bottom: 0;
-}
+
 .navigation .inside .menu .mode:hover[b-7p2jgaokwz] {
   color: #2196f3;
 }
@@ -112,7 +104,7 @@
     margin-right: 0;
   }
   .navigation .inside .menu .material-icons[b-7p2jgaokwz] {
-    font-size: 30px;
+    font-size: 25px!important;
     margin-bottom: 0;
   }
 }

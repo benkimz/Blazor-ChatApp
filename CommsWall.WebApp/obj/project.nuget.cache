@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CKgNhImLg6l0fUQRdg9m8C96xyBzsh0SbwEQNjWeLDROV3OXZIFlBSdffCP6coXXt01O/4PdD3f51bmivuDYBw==",
+  "dgSpecHash": "aqRDZ+kBneH64Fb1hTNBuJk20DoRtsyuFyHu1zv2UGWtU1IFbReDH7f70nETrnGPpIvOxobmX4OPcVMwqgTSJA==",
   "success": true,
   "projectFilePath": "/home/kennedy_muthuri/Developer/Projects/CommsWall/CommsWall.WebApp/CommsWall.WebApp.csproj",
   "expectedPackageFiles": [
-    "/home/kennedy_muthuri/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.7/microsoft.aspnetcore.app.ref.7.0.7.nupkg.sha512"
+    "/home/kennedy_muthuri/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.9/microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,1 +1,5 @@
 Microsoft.AspNetCore.SignalR.Client
+
+[Required]
+[MaxLength(225)]
+[Column(TypeName = "varchar(10)")]

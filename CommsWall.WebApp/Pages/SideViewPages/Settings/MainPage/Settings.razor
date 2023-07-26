@@ -1,0 +1,33 @@
+﻿@using CommsWall.WebApp.Pages.SideViewPages.Settings.AccountSettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.ChatSettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.NotificationSettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.ConnectionSettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.AppearanceSettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.LanguageSettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.PrivacySettings
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.Logout
+@using CommsWall.WebApp.Pages.SideViewPages.Settings.SettingsProfile
+
+<!-- Start of Settings -->
+<!-- class="tab-pane fade" -->
+<div class="tab-pane" id="settings">
+	<div class="settings">
+		<SettingsProfile />
+		<div class="categories" id="accordionSettings">
+			<h1>Settings</h1>
+			<AccountSettings />
+			<ChatSettings />
+			<NotificationSettings />
+			<ConnectionSettings />
+			<AppearanceSettings />
+			<LanguageSettings />
+			<PrivacySettings />
+			<Logout />
+		</div>
+	</div>
+</div>
+<!-- End of Settings -->
+
+@code {
+
+}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {}
+    "G:\\Applantus-CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
+    "G:\\Applantus-CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj",
+        "projectUniqueName": "G:\\Applantus-CommsWall\\CommsWall.Core\\CommsWall.Core.csproj",
         "projectName": "CommsWall.Core",
-        "projectPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj",
-        "packagesPath": "C:\\Users\\benkimz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\obj\\",
+        "projectPath": "G:\\Applantus-CommsWall\\CommsWall.Core\\CommsWall.Core.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "G:\\Applantus-CommsWall\\CommsWall.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\benkimz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

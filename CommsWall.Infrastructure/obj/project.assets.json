@@ -3195,19 +3195,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benkimz\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj",
+      "projectUniqueName": "G:\\Applantus-CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj",
       "projectName": "CommsWall.Infrastructure",
-      "projectPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\benkimz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Infrastructure\\obj\\",
+      "projectPath": "G:\\Applantus-CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "G:\\Applantus-CommsWall\\CommsWall.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\benkimz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3221,8 +3221,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
-              "projectPath": "C:\\Users\\benkimz\\Desktop\\benkimz.tech\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj"
+            "G:\\Applantus-CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
+              "projectPath": "G:\\Applantus-CommsWall\\CommsWall.Core\\CommsWall.Core.csproj"
             }
           }
         }

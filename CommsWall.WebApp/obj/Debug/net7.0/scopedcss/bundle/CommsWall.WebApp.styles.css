@@ -1,3 +1,5 @@
+@import '_content/Blazored.Modal/Blazored.Modal.bundle.scp.css';
+
 /* _content/CommsWall.WebApp/Controls/ChatControls/CreateChat/MainPage/CreateChat.razor.rz.scp.css */
 body[b-k5zi08wg3a] {
 }
@@ -233,31 +235,6 @@ body[b-k5zi08wg3a] {
   font-size: 14px;
   font-weight: 400;
 }
-/* _content/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/SearchBox/SearchBox.razor.rz.scp.css */
-.sidebar .search[b-r1vrrax9ed] {
-    margin-bottom: 30px;
-}
-.sidebar .search .form-control[b-r1vrrax9ed] {
-    padding: 0 15px 0 54px;
-    height: 56px;
-}
-.sidebar .search .loop[b-r1vrrax9ed] {
-    position: absolute;
-    padding: 0 15px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    line-height: 0;
-    margin-bottom: 0 !important;
-}
-.sidebar .search .loop .material-icons[b-r1vrrax9ed] {
-    font-size: 25px;
-    font-weight: 600;
-    color: #bdbac2;
-}
-.sidebar .search .loop .material-icons.filter-list[b-r1vrrax9ed] {
-    font-weight: 400;
-}
 /* _content/CommsWall.WebApp/Pages/SideViewPages/ChatHistory/UserStateCategories/UserStateCategories.razor.rz.scp.css */
 .sidebar .sort[b-yaxjqxewwm] {
   text-align: center;
@@ -329,12 +306,6 @@ body[b-k5zi08wg3a] {
         }
 
     
-/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor.rz.scp.css */
-body[b-mmd9vbo5qu] {
-}
-/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor.rz.scp.css */
-body[b-u1ot8ovv2q] {
-}
 /* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/Notification/Notification.razor.rz.scp.css */
 .sidebar .notifications .notification .status[b-7p2b2ce308] {
     position: absolute;
@@ -379,6 +350,12 @@ body[b-u1ot8ovv2q] {
         font-size: 15px;
         color: #bdbac2;
     }
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationFilter/NotificationFilter.razor.rz.scp.css */
+body[b-mmd9vbo5qu] {
+}
+/* _content/CommsWall.WebApp/Pages/SideViewPages/Notifications/NotificationGroup/NotificationGroup.razor.rz.scp.css */
+body[b-u1ot8ovv2q] {
+}
 /* _content/CommsWall.WebApp/Pages/SideViewPages/Settings/AccountSettings/AccountSettings.razor.rz.scp.css */
 body[b-97bp0i1jgy] {
 }

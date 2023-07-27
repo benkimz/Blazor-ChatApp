@@ -1,3 +1,4 @@
+@inject IModalService modal;
 <div class="search">
     <form class="form-inline position-relative">
         <input 
@@ -11,7 +12,9 @@
             <i class="fa fa-solid fa-brand fa-search"></i>
         </button>
     </form>
-    <button class="btn create" data-toggle="modal" data-target="#exampleModalCenter">
+    
+    <button @onclick="@(()=>modal.Show<Modal>("Group"))"
+    class="btn create" data-toggle="modal" data-target="#exampleModalCenter">
         <i class="material-icons">person_add</i>
     </button>
 </div>
@@ -26,4 +29,17 @@
     {
         await OnSearch.InvokeAsync(filterString);
     }
+    // start
+    @* private async Task ShowModal()
+    {
+        var modalOptions = new ModalOptions()
+        {
+            Class = "modal-dialog-centered"
+        };
+
+        var modal = Modal.Show<CreateChat>("My Movies", modalOptions);
+        var result = await modal.Result;
+
+        // You can handle the result returned from the modal here, if needed
+    } *@
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommsWall.WebApp", "CommsWall.WebApp\CommsWall.WebApp.csproj", "{874FB371-BE6F-41B3-8BF6-FF333BF50D92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommsWall.Core", "CommsWall.Core\CommsWall.Core.csproj", "{65ECF203-8F7C-49C9-836C-661D3E9236B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommsWall.Infrastructure", "CommsWall.Infrastructure\CommsWall.Infrastructure.csproj", "{9D6D28B2-95F2-40F0-88B5-8F3E95D692B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{874FB371-BE6F-41B3-8BF6-FF333BF50D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{874FB371-BE6F-41B3-8BF6-FF333BF50D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{874FB371-BE6F-41B3-8BF6-FF333BF50D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ECF203-8F7C-49C9-836C-661D3E9236B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ECF203-8F7C-49C9-836C-661D3E9236B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ECF203-8F7C-49C9-836C-661D3E9236B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ECF203-8F7C-49C9-836C-661D3E9236B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6D28B2-95F2-40F0-88B5-8F3E95D692B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6D28B2-95F2-40F0-88B5-8F3E95D692B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6D28B2-95F2-40F0-88B5-8F3E95D692B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6D28B2-95F2-40F0-88B5-8F3E95D692B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

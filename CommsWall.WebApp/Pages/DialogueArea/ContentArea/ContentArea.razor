@@ -1,12 +1,7 @@
 @using CommsWall.Core.Aggregates.ChatMessageAg;
-@using CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks;
 @using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
 
-@inject IJSRuntime JSRuntime
-
-
 @inject IUserBrowserData browserData
-@inject IQueryMessages msgStore
 
 <div class="content" id="content">
   <div class="container">
@@ -25,36 +20,10 @@
         deliveryStatus="sent" />
 
       <DateSeparator dateString="Today" />
-
-      <MessageContainer
-        category="inbox"
-        textMessage="Morning"
-        timeStamp="06:05 am"
-      />
-
-      <MessageContainer
-        category="outbox"
-        textMessage="Morning too, How are you?"
-        timeStamp="06:06 am"
-        deliveryStatus="read" />
-
-      <MessageContainer
-        category="inbox"
-        textMessage="We've got some killer ideas kicking about already."
-        timeStamp="06:08 am"
-         />
-
-      <MessageContainer
-        category="outbox"
-        textMessage="Roger that boss!"
-        timeStamp="06:10 am"
-        deliveryStatus="delivered" />
-
-        <h1>User: @userId.ToString()</h1>
         *@
-        @if(sessionMessages != null)
+        @if(Messages != null)
         {
-            @foreach(var message in sessionMessages)
+            @foreach(var message in Messages)
             {  
                 @if ((int) message!.SenderId != userId)
                 {
@@ -77,18 +46,13 @@
 </div>
 
 @code {
-    @* In case of a new message, we can use this function to scroll to bottom to read them *@
-    private async Task ScrollChatsToBottom()
-    {
-        await JSRuntime.InvokeAsync<object>("scrollToBottom", "content");
-    }
-
     private int userId { get; set; }
 
-    [Parameter]
-    public int sessionId { get; set; }
-
-    private List<ChatMessage>? sessionMessages { get; set; } = new List<ChatMessage>();
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        LoadSessions();
+    }
 
     private async void LoadSessions()
     {
@@ -96,10 +60,6 @@
         StateHasChanged();
     }
 
-    protected override async Task OnInitializedAsync()
-    {
-        await base.OnInitializedAsync();
-        sessionMessages = (await msgStore.GetSessionMessages(sessionId))!.ToList();
-        LoadSessions();
-    }
+    [Parameter]
+    public List<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
 } 

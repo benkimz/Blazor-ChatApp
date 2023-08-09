@@ -1,4 +1,7 @@
-﻿@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
+﻿@using CommsWall.Core.Aggregates.ChatMessageAg;
+@using CommsWall.Infrastructure.ChatSessionsScreen.ManageMessages.SubTasks;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
 @using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
 
 @using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
@@ -8,8 +11,12 @@
 
 @using CommsWall.Core.Aggregates.ChatSessionAg;
 
+@inject IJSRuntime JSRuntime
+
 @inject IQueryChatSubscribers queryUsers
 @inject IQueryChatSessions querySessions
+@inject IQueryMessages msgStore
+@inject IManageMessages comms
 
 @inject IUserBrowserData browserData
 
@@ -18,13 +25,15 @@
             userOrGroupName="@targetName"
             lastSeen="Active Now" />
 
-    <ContentArea sessionId="@sessionId"/>
+    <ContentArea Messages="@sessionMessages"/>
     
     <MessageCompose 
-        sessionId="@sessionId"/>
+        OnClickSend="@HandleSendMessage"/>
 </div>
 
 @code {
+    private int userId { get; set; }
+
     [Parameter]
     public int sessionId { get; set; } 
 
@@ -34,15 +43,43 @@
 
     private string? avatarUrl { get; set; } 
 
+    private List<ChatMessage>? sessionMessages { get; set; } = new List<ChatMessage>();
+
     protected override async void OnInitialized()
     {
         base.OnInitialized();
         session = await querySessions.GetSessionById(sessionId);
+        if(sessionId != 0)
+            sessionMessages = (await msgStore.GetSessionMessages(sessionId))!.ToList();
         if(session?.Category == SessionCategory.Private)
         {
             var target = await queryUsers.GetSubscriberByIdAsync(session!.TargetIdentifier);
             targetName = target!.UserName;
             avatarUrl = target!.AvatarUrl;
         }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        LoadSessions();
+    }
+
+    private async void LoadSessions()
+    {
+        userId = await browserData.GetLoggedUserIdAsync();
+        StateHasChanged();
+    }
+
+    private void HandleSendMessage(string message)
+    {
+        if (!string.IsNullOrWhiteSpace(message) && sessionId != 0)
+            comms.SendMessage(sessionId, message);
+    }
+
+    @* In case of a new message, we can use this function to scroll to bottom to read them *@
+    private async Task ScrollChatsToBottom()
+    {
+        await JSRuntime.InvokeAsync<object>("scrollToBottom", "content");
     }
 }

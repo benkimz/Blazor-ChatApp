@@ -7,7 +7,7 @@ namespace CommsWall.WebApp.Hubs
     {
         public Task SendMessage(string user, ChatMessage message)
         {
-            return Clients.Client(user).SendAsync("IncomingMessage", message);
+            return Clients.User(user).SendAsync("IncomingMessage", message);
         }
     }
 }

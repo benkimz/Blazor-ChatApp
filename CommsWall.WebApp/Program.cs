@@ -14,6 +14,8 @@ using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
 using CommsWall.Infrastructure.BrowserStorageScreen;
 using CommsWall.Infrastructure.ChatSessionsScreen.ManageMessages.SubTasks;
 using CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks;
+using Microsoft.AspNetCore.ResponseCompression;
+using CommsWall.WebApp.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +27,11 @@ builder.Services.AddSingleton<WeatherForecastService>();
 
 
 // --testing -towards --production grade phase
+builder.Services.AddResponseCompression(opts =>
+{
+    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/octet-stream" });
+});
+
 builder.Services.AddDbContext<CommsDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("AzureSqlDB"), b => b.MigrationsAssembly("CommsWall.WebApp"));
@@ -58,6 +65,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.MapBlazorHub();
+app.MapHub<CommsHub>("/commshub");
 app.MapFallbackToPage("/_Host");
 
 app.Run();

@@ -10,6 +10,7 @@
 @using CommsWall.WebApp.Pages.DialogueArea.MessageCompose
 
 @using CommsWall.Core.Aggregates.ChatSessionAg;
+@using Microsoft.AspNetCore.SignalR.Client;
 
 @inject IJSRuntime JSRuntime
 
@@ -19,6 +20,7 @@
 @inject IManageMessages comms
 
 @inject IUserBrowserData browserData
+@inject NavigationManager navigationManager
 
 <div class="chat">
     <TopBar avatarUrl="@avatarUrl"
@@ -38,6 +40,8 @@
     public int sessionId { get; set; } 
 
     private ChatSession? session { get; set; }
+
+    private HubConnection? userComms;
 
     private string? targetName { get; set; } 
 
@@ -63,6 +67,22 @@
     {
         await base.OnInitializedAsync();
         LoadSessions();
+        userComms = new HubConnectionBuilder()
+        .WithUrl(navigationManager.ToAbsoluteUri("/commshub"))
+        .WithAutomaticReconnect()
+        .Build();
+        userComms.On<ChatMessage>("IncomingMessage", (newIncomingMessage) =>
+        {
+            sessionMessages?.Add(newIncomingMessage);
+            InvokeAsync(StateHasChanged);
+        });
+        try
+        {
+            await userComms.StartAsync();
+        }catch(Exception e)
+        {
+            var error = e.StackTrace; // ignore error
+        }
     }
 
     private async void LoadSessions()

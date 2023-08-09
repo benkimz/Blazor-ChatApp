@@ -61,11 +61,13 @@ namespace CommsWall.Data.Store.ChatSessionsDST
             return Task.FromResult(session?.Id);
 		}
 
-        public void SendMessage(int sessionId, string textMessage)
+        public ChatMessage? SendMessage(int sessionId, string textMessage)
         {
             ChatSession? session = _context.ChatSessions.Find(sessionId);
             if (session != null)
             {
+                ChatMessage? ComposedMessage, MessageToDeliver;
+                
                 if (session!.Category == SessionCategory.Private)
                 {
                     ChatSession? recipientSession = _context.ChatSessions.FirstOrDefault(sess => sess.SenderId == session.TargetIdentifier && session.Category == SessionCategory.Private && sess.TargetIdentifier == session.SenderId);
@@ -74,27 +76,30 @@ namespace CommsWall.Data.Store.ChatSessionsDST
                         AddSession(session!.Category, session!.TargetIdentifier, session!.SenderId);
                         recipientSession = _context.ChatSessions.FirstOrDefault(sess => sess.SenderId == session.TargetIdentifier && session.Category == SessionCategory.Private && sess.TargetIdentifier == session.SenderId);
                     }
-                    session.Messages.Add(new ChatMessage
+                    ComposedMessage = new ChatMessage
                     {
-                        SenderId = session.SenderId, 
+                        SenderId = session.SenderId,
                         Session = session,
                         TextMessage = textMessage,
                         TimeStamp = DateTime.Now
-                    });
-                    _context.SaveChanges();
-
+                    };
+                    session.Messages.Add(ComposedMessage);
                     if (recipientSession != null)
-                        recipientSession.Messages.Add(new ChatMessage
+                    {
+                        MessageToDeliver = new ChatMessage
                         {
-                            SenderId = session.SenderId, 
-                            Session = session,
+                            SenderId = session.SenderId,
+                            Session = recipientSession,
                             TextMessage = textMessage,
                             TimeStamp = DateTime.Now
-                        });
-                    _context.SaveChanges();
-                } 
+                        };
+                        recipientSession.Messages.Add(MessageToDeliver);
+                    }
+                    _context.SaveChanges(); return ComposedMessage;
+                }
                 // Add group config
             }
+            return null;
         }
 
         public Task<IEnumerable<ChatMessage>?> GetChatMessages(int sessionId)

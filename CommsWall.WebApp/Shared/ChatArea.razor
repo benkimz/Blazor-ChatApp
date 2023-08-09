@@ -74,7 +74,11 @@
     private void HandleSendMessage(string message)
     {
         if (!string.IsNullOrWhiteSpace(message) && sessionId != 0)
-            comms.SendMessage(sessionId, message);
+        {
+            ChatMessage? sentMessage = comms.SendMessage(sessionId, message);
+            sessionMessages?.Add(sentMessage!);
+            StateHasChanged();
+        }
     }
 
     @* In case of a new message, we can use this function to scroll to bottom to read them *@

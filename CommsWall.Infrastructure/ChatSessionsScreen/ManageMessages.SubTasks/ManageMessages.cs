@@ -1,4 +1,6 @@
-﻿using CommsWall.Infrastructure.PluginInterfaces.ChatSessionsRp;
+﻿using CommsWall.Core.Aggregates.ChatMessageAg;
+using CommsWall.Core.Aggregates.ChatSessionAg;
+using CommsWall.Infrastructure.PluginInterfaces.ChatSessionsRp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +18,9 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.ManageMessages.SubTasks
             _chatSessionsRepository = chatSessionsRepository;
         }
 
-        public void SendMessage(int sessionId, string textMessage)
+        public ChatMessage? SendMessage(int sessionId, string textMessage)
         {
-            _chatSessionsRepository.SendMessage(sessionId, textMessage);
+            return _chatSessionsRepository.SendMessage(sessionId, textMessage);
         }
     }
 }

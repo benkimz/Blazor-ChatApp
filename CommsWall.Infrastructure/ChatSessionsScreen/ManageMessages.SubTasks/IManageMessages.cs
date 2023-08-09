@@ -9,6 +9,6 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.ManageMessages.SubTasks
 {
     public interface IManageMessages
     {
-        ChatMessage? SendMessage(int sessionId, string textMessage);
+        Tuple<ChatMessage, Dictionary<int, ChatMessage>>? SendMessage(int sessionId, string textMessage);
     }
 }

@@ -75,9 +75,13 @@
     {
         if (!string.IsNullOrWhiteSpace(message) && sessionId != 0)
         {
-            ChatMessage? sentMessage = comms.SendMessage(sessionId, message);
-            sessionMessages?.Add(sentMessage!);
-            StateHasChanged();
+            Tuple<ChatMessage, Dictionary<int, ChatMessage>>? results = comms.SendMessage(sessionId, message);
+            if(results != null)
+            {
+                var (outGoneMessage, broadCastingObject) = results;
+                sessionMessages?.Add(outGoneMessage);
+                StateHasChanged();
+            }
         }
     }
 

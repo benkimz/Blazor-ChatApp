@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MNysdp12sCttvEfXzDBJ8SX2QNUanWCBss7kiaEpS0nF/EdAwvT8zuCPhc5noqUhpHpVXQYAvGe9Qzd+BhqytQ==",
+  "dgSpecHash": "jF16ohmx89DxOggxSD492uWCBdo8a26Q0WtPB1pOOuyFhFjjZU7hQxGIfsyQFPVC6UuZV/oG6TQX8OsJOGjV/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\benkimz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\benkimz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

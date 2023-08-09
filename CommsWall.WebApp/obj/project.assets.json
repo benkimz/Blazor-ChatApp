@@ -3851,11 +3851,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
       "projectName": "CommsWall.WebApp",
-      "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
+      "projectPath": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.WebApp\\CommsWall.WebApp.csproj",
       "packagesPath": "C:\\Users\\benkimz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.WebApp\\obj\\",
+      "outputPath": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\benkimz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3873,14 +3873,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
-              "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj"
+            "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
+              "projectPath": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj"
             },
-            "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Data.Store\\CommsWall.Data.Store.csproj": {
-              "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Data.Store\\CommsWall.Data.Store.csproj"
+            "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.Data.Store\\CommsWall.Data.Store.csproj": {
+              "projectPath": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.Data.Store\\CommsWall.Data.Store.csproj"
             },
-            "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj"
+            "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\benkimz\\Desktop\\Applantus\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj"
             }
           }
         }

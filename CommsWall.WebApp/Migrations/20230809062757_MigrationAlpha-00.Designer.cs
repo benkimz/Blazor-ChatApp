@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CommsWall.WebApp.Migrations
 {
     [DbContext(typeof(CommsDbContext))]
-    [Migration("20230803181721_MigrationAlpha-00")]
+    [Migration("20230809062757_MigrationAlpha-00")]
     partial class MigrationAlpha00
     {
         /// <inheritdoc />
@@ -122,6 +122,9 @@ namespace CommsWall.WebApp.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("SenderId")
+                        .HasColumnType("int");
 
                     b.Property<int>("SessionID")
                         .HasColumnType("int");

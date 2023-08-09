@@ -120,6 +120,9 @@ namespace CommsWall.WebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("SenderId")
+                        .HasColumnType("int");
+
                     b.Property<int>("SessionID")
                         .HasColumnType("int");
 

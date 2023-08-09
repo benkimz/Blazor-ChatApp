@@ -154,6 +154,7 @@ namespace CommsWall.WebApp.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    SenderId = table.Column<int>(type: "int", nullable: false),
                     SessionID = table.Column<int>(type: "int", nullable: false),
                     TextMessage = table.Column<string>(type: "nvarchar(max)", maxLength: 4096, nullable: false),
                     TimeStamp = table.Column<DateTime>(type: "datetime2", nullable: false)

@@ -1,39 +1,19 @@
-@code {
-    [Parameter] @* category: inbox || outbox *@
-    public String? category { get; set; }
+@using CommsWall.Core.Aggregates.ChatSubscriberAg;
+@using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
 
-    [Parameter]
-    public String? senderTitle { get; set; }
-
-    [Parameter]
-    public String? senderAvatarUrl { get; set; }
-
-    [Parameter]
-    public String? textMessage { get; set; }
-
-    [Parameter]
-    public String? timeStamp { get; set; }
-
-    [Parameter]
-    public String? deliveryStatus { get; set; }
-
-    [CascadingParameter(Name = "FontAwesomeIconStyle")]
-    private string? FontAwesomeIconStyle
-    {
-        get; set;
-    }
-}
+@inject IQueryChatSubscribers queryUsers
 
 @if (category == "inbox"){
     <div class="message">
-        <img 
-            class="avatar-md" 
-            src="@senderAvatarUrl" 
-            data-toggle="tooltip" 
-            data-placement="top" 
-            title="@senderTitle" 
-            alt="avatar"
-        >
+        @if(sender != null)
+        {
+            <img class="avatar-md"
+                 src="@sender?.AvatarUrl"
+                 data-toggle="tooltip"
+                 data-placement="top"
+                 title="@sender?.UserName"
+                 alt="@sender?.UserName">
+        }
         <div class="text-main">
             <div class="text-group">
                 <div class="text">
@@ -68,7 +48,28 @@
     failed- message failed to send (Icon - red exclamation mark) - <i class="fa-solid fa-exclamation-circle"></i>
 *@
 
-@code{
+@code {
+    [Parameter] @* category: inbox || outbox *@
+    public String? category { get; set; }
+
+    [Parameter]
+    public int senderId { get; set; }
+
+    [Parameter]
+    public String? textMessage { get; set; }
+
+    [Parameter]
+    public String? timeStamp { get; set; }
+
+    [Parameter]
+    public String? deliveryStatus { get; set; }
+
+    [CascadingParameter(Name = "FontAwesomeIconStyle")]
+    private string? FontAwesomeIconStyle
+    {
+        get; set;
+    }
+
     private string GetMessageDeliveryStatusIcon()
     {
         switch (deliveryStatus)
@@ -84,5 +85,14 @@
             default:
                 return $"<i class = 'fa fa-check {FontAwesomeIconStyle}' style = 'font-size:1em;'></i>";
         }
+    }
+
+    private ChatSubscriber? sender { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        if(senderId != 0)
+        sender = await queryUsers.GetSubscriberByIdAsync(senderId);
     }
 }

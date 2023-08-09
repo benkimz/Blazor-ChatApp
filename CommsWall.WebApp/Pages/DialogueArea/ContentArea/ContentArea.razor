@@ -4,6 +4,7 @@
 
 @inject IJSRuntime JSRuntime
 
+
 @inject IUserBrowserData browserData
 @inject IQueryMessages msgStore
 
@@ -11,18 +12,14 @@
   <div class="container">
     <div class="col-md-12">
       <DateSeparator dateString="Yesterday" />
-
+      @*
       <MessageContainer
         category="inbox"
-        senderTitle="Ben Kim"
-        senderAvatarUrl="img/avatars/avatar.jpg"
         textMessage="I love you"
         timeStamp="12:05 am" />
 
       <MessageContainer
         category="outbox"
-        senderTitle="Ben Kim"
-        senderAvatarUrl="img/avatars/avatar.jpg"
         textMessage="I love you too"
         timeStamp="12:05 am"
         deliveryStatus="sent" />
@@ -31,61 +28,49 @@
 
       <MessageContainer
         category="inbox"
-        senderTitle="Ben Kim"
-        senderAvatarUrl="img/avatars/avatar.jpg"
         textMessage="Morning"
         timeStamp="06:05 am"
       />
 
       <MessageContainer
         category="outbox"
-        senderTitle="Ben Kim"
         textMessage="Morning too, How are you?"
         timeStamp="06:06 am"
         deliveryStatus="read" />
 
       <MessageContainer
         category="inbox"
-        senderTitle="Ben Kim"
-        senderAvatarUrl="img/avatars/avatar-female-5.jpg"
         textMessage="We've got some killer ideas kicking about already."
         timeStamp="06:08 am"
          />
 
       <MessageContainer
         category="outbox"
-        senderTitle="Ben Kim"
         textMessage="Roger that boss!"
         timeStamp="06:10 am"
         deliveryStatus="delivered" />
+
         <h1>User: @userId.ToString()</h1>
-        @*
-            @if(sessionMessages != null)
-            {
-                @foreach(var message in sessionMessages)
+        *@
+        @if(sessionMessages != null)
+        {
+            @foreach(var message in sessionMessages)
+            {  
+                @if ((int) message!.SenderId != userId)
                 {
-                    <h3>@message?Session.SenderId.ToString()</h3>
-                    <h4>user: @userId.ToString()</h4>
-                    
-                    @if ((int) message!.Session.TargetIdentifier != userId)
-                    {
-                        <mark>------mark</mark>
-                        <MessageContainer category="inbox"
-                                          senderTitle="Sender"
-                                          textMessage="@message?.TextMessage"
+                    <MessageContainer category="inbox"
+                        senderId="@message!.SenderId"
+                        textMessage="@message?.TextMessage"
                         timeStamp="@message?.TimeStamp.ToString()" />
-                    }
-                    else
-                    {
-                        <MessageContainer category="outbox"
-                                          senderTitle="Sender"
-                                          textMessage="@message?.TextMessage"
-                                          timeStamp="@message?.TimeStamp.ToString()" />
-                    } 
+                }
+                else
+                {
+                    <MessageContainer category="outbox"
+                                        textMessage="@message?.TextMessage"
+                                        timeStamp="@message?.TimeStamp.ToString()" />
                 }
             }
-           *@
-
+        }
       <TypingAnimation title="benkimz" avatarUrl="img/avatars/avatar.jpg" />
     </div>
   </div>
@@ -103,7 +88,7 @@
     [Parameter]
     public int sessionId { get; set; }
 
-    private IEnumerable<ChatMessage>? sessionMessages { get; set; } = Enumerable.Empty<ChatMessage>();
+    private List<ChatMessage>? sessionMessages { get; set; } = new List<ChatMessage>();
 
     private async void LoadSessions()
     {
@@ -114,7 +99,7 @@
     protected override async Task OnInitializedAsync()
     {
         await base.OnInitializedAsync();
-        sessionMessages = await msgStore.GetSessionMessages(sessionId);
+        sessionMessages = (await msgStore.GetSessionMessages(sessionId))!.ToList();
         LoadSessions();
     }
 } 

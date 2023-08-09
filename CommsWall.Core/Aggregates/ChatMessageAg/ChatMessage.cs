@@ -1,4 +1,5 @@
 ﻿using CommsWall.Core.Aggregates.ChatSessionAg;
+using CommsWall.Core.Aggregates.ChatSubscriberAg;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +12,9 @@ namespace CommsWall.Core.Aggregates.ChatMessageAg
     public class ChatMessage
     {
         public int Id { get; set; }
+
+        [Required]
+        public int SenderId { get; set; }
 
         [Required]
         public int SessionID { get; set; }

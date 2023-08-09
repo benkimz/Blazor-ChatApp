@@ -66,7 +66,10 @@ namespace CommsWall.Data.Store.ChatSessionsDST
             ChatSession? session = _context.ChatSessions.Find(sessionId);
             if (session != null)
             {
-                if(session!.Category == SessionCategory.Private)
+                //
+                ChatSubscriber? sender = _context.ChatSubscribers.Find(session.SenderId);
+                //
+                if (session!.Category == SessionCategory.Private)
                 {
                     ChatSession? recipientSession = _context.ChatSessions.FirstOrDefault(sess => sess.SenderId == session.TargetIdentifier && session.Category == SessionCategory.Private && sess.TargetIdentifier == session.SenderId);
                     if (recipientSession == null)
@@ -76,6 +79,7 @@ namespace CommsWall.Data.Store.ChatSessionsDST
                     }
                     session.Messages.Add(new ChatMessage
                     {
+                        SenderId = session.SenderId, // here
                         Session = session,
                         TextMessage = textMessage,
                         TimeStamp = DateTime.Now
@@ -85,6 +89,7 @@ namespace CommsWall.Data.Store.ChatSessionsDST
                     if (recipientSession != null)
                         recipientSession.Messages.Add(new ChatMessage
                         {
+                            SenderId = session.SenderId, // here
                             Session = session,
                             TextMessage = textMessage,
                             TimeStamp = DateTime.Now

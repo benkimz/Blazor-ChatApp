@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CommsWall.WebApp.Migrations
 {
     /// <inheritdoc />
-    public partial class MigrationAlpha : Migration
+    public partial class MigrationAlpha00 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -36,7 +36,8 @@ namespace CommsWall.WebApp.Migrations
                     GroupName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     GroupDescription = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     AvatarUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatorID = table.Column<int>(type: "int", nullable: false)
+                    CreatorID = table.Column<int>(type: "int", nullable: false),
+                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -63,6 +64,7 @@ namespace CommsWall.WebApp.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ChatSessions", x => x.Id);
+                    table.UniqueConstraint("AK_User_UniqueTargetKind", x => new { x.SenderId, x.TargetIdentifier, x.Category });
                     table.ForeignKey(
                         name: "FK_ChatSessions_ChatSubscribers_SenderId",
                         column: x => x.SenderId,
@@ -176,11 +178,6 @@ namespace CommsWall.WebApp.Migrations
                 name: "IX_ChatMessages_SessionID",
                 table: "ChatMessages",
                 column: "SessionID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ChatSessions_SenderId",
-                table: "ChatSessions",
-                column: "SenderId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_GroupAdmin_ChatGroupId",

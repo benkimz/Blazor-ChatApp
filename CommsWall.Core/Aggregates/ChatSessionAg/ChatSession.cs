@@ -16,11 +16,11 @@ namespace CommsWall.Core.Aggregates.ChatSessionAg
 
         public int SenderId { get; set; }
 
-        public virtual ChatSubscriber Sender { get; set; }
+        public virtual required ChatSubscriber Sender { get; set; }
 
         public int TargetIdentifier { get; set; }
 
-        public virtual ICollection<ChatMessage> Messages { get; set; }
+        public virtual ICollection<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
 
         public DateTime DateCreated { get; set; }
     }

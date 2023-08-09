@@ -10,22 +10,14 @@
             role="tabpanel" 
             aria-labelledby="list-chat-list"
         >
-            <div class="chat">
 
-                <TopBar 
-                    avatarUrl="img/avatars/avatar.jpg"
-                    userOrGroupName="Benard Kimani"
-                    lastSeen="Active Now"/>
-                
-                <ContentArea />
+                <ChatArea sessionId="@sessionId"/>
 
-                <MessageCompose />
-
-            </div>
-            @* 
-                TODO: Add start call screens
-                TODO: Add menu options
-             *@
         </div>
     </div>
 </div>
+
+@code{
+    [Parameter]
+    public int sessionId { get; set; }
+}

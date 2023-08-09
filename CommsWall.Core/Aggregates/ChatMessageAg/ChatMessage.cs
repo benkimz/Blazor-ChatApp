@@ -16,9 +16,9 @@ namespace CommsWall.Core.Aggregates.ChatMessageAg
         public int SessionID { get; set; }
 
         [MaxLength(4096)]
-        public string TextMessage { get; set; }
+        public required string TextMessage { get; set; }
 
-        public virtual ChatSession Session { get; set; }
+        public virtual required ChatSession Session { get; set; }
 
         public DateTime TimeStamp { get; set; }
     }

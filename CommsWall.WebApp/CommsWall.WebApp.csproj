@@ -5,6 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <Content Remove="Pages\TestChat.razor" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Blazored.Modal" Version="7.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
       <PrivateAssets>all</PrivateAssets>
@@ -14,5 +17,16 @@
   <ItemGroup>
     <ProjectReference Include="..\CommsWall.Core\CommsWall.Core.csproj" />
     <ProjectReference Include="..\CommsWall.Infrastructure\CommsWall.Infrastructure.csproj" />
+    <ProjectReference Include="..\CommsWall.Data.Store\CommsWall.Data.Store.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\TestChat.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\TestChat.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shared\ChatArea.razor" />
+    <None Include="Pages\TestChat.razor" />
   </ItemGroup>
 </Project>

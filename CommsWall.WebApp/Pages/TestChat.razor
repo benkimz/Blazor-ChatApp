@@ -1,0 +1,87 @@
+﻿@page "/testchat"
+@page "/testchat/private/{targetUserId:int}"
+
+@using CommsWall.Core.Aggregates.ChatMessageAg;
+@using CommsWall.Core.Aggregates.ChatSessionAg;
+@using CommsWall.Core.Aggregates.ChatSubscriberAg;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
+@using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+
+@inject IQueryChatSubscribers queryUsers
+
+@inject IQueryChatSessions querySessions
+
+@inject ProtectedSessionStorage sessionStorage
+<div class="main">
+    <button @onclick="LoadData" class="btn-alert">Load Session</button>
+@if(targetUser != null)
+{
+    <h5><u>A chat session with,<mark> @targetUser?.UserName</mark></u></h5><hr />
+}
+
+<form>
+    <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="Enter you message...">
+        </div>
+    </div>
+    <button type="button" class="btn-primary">Send Message</button>
+</form>
+
+<div>@loggedUserInSession</div>
+@if(loggedUser != null)
+{
+        <img src="@loggedUser?.AvatarUrl" style="height: 35px; width: 35px; border-radius: 100%;"/>
+    <p>sessionId: @sessionId</p>
+}
+
+    @if(Messages != null)
+    {
+        @foreach(var msg in Messages)
+        {
+            <div>
+                @msg?.TextMessage
+                <br>
+                @msg?.TimeStamp
+            </div>
+        }
+    }
+
+</div>
+@code {
+    [Parameter]
+    public int targetUserId { get; set; }
+
+    public ChatSubscriber? targetUser { get; set; }
+
+    public ChatSubscriber? loggedUser { get; set; }
+
+    public int targetSessionId { get; set; }
+
+    public string? loggedUserInSession { get; set; }
+
+    public int sessionId { get; set; }
+
+    public ChatSession targetSession { get; set; }
+
+    public IEnumerable<ChatMessage> Messages { get; set; }
+
+    private async void LoadData()
+    {
+        base.OnInitialized();
+        targetUser = await queryUsers.GetSubscriberByIdAsync(targetUserId);
+        var sessionedUser = await sessionStorage.GetAsync<string>("commsUser");
+
+        loggedUserInSession = sessionedUser.Success ? sessionedUser.Value : "-1";
+
+        loggedUser = await queryUsers.GetSubscriberByIdAsync(int.Parse(loggedUserInSession));
+
+        sessionId = await querySessions.GetSessionId(loggedUser.Id, targetUserId, SessionCategory.Private);
+
+        targetSession = await querySessions.GetSessionById(sessionId);
+
+        Messages = targetSession.Messages.AsEnumerable();
+    }    
+}

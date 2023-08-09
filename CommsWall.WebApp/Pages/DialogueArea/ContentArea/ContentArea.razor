@@ -1,4 +1,11 @@
+@using CommsWall.Core.Aggregates.ChatMessageAg;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks;
+@using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
+
 @inject IJSRuntime JSRuntime
+
+@inject IUserBrowserData browserData
+@inject IQueryMessages msgStore
 
 <div class="content" id="content">
   <div class="container">
@@ -51,6 +58,33 @@
         textMessage="Roger that boss!"
         timeStamp="06:10 am"
         deliveryStatus="delivered" />
+        <h1>User: @userId.ToString()</h1>
+        @*
+            @if(sessionMessages != null)
+            {
+                @foreach(var message in sessionMessages)
+                {
+                    <h3>@message?Session.SenderId.ToString()</h3>
+                    <h4>user: @userId.ToString()</h4>
+                    
+                    @if ((int) message!.Session.TargetIdentifier != userId)
+                    {
+                        <mark>------mark</mark>
+                        <MessageContainer category="inbox"
+                                          senderTitle="Sender"
+                                          textMessage="@message?.TextMessage"
+                        timeStamp="@message?.TimeStamp.ToString()" />
+                    }
+                    else
+                    {
+                        <MessageContainer category="outbox"
+                                          senderTitle="Sender"
+                                          textMessage="@message?.TextMessage"
+                                          timeStamp="@message?.TimeStamp.ToString()" />
+                    } 
+                }
+            }
+           *@
 
       <TypingAnimation title="benkimz" avatarUrl="img/avatars/avatar.jpg" />
     </div>
@@ -58,9 +92,29 @@
 </div>
 
 @code {
-    @* In case of a new message, we can use this function to scroll to bottom to read them *@ 
+    @* In case of a new message, we can use this function to scroll to bottom to read them *@
     private async Task ScrollChatsToBottom()
     {
         await JSRuntime.InvokeAsync<object>("scrollToBottom", "content");
-    } 
+    }
+
+    private int userId { get; set; }
+
+    [Parameter]
+    public int sessionId { get; set; }
+
+    private IEnumerable<ChatMessage>? sessionMessages { get; set; } = Enumerable.Empty<ChatMessage>();
+
+    private async void LoadSessions()
+    {
+        userId = await browserData.GetLoggedUserIdAsync();
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        sessionMessages = await msgStore.GetSessionMessages(sessionId);
+        LoadSessions();
+    }
 } 

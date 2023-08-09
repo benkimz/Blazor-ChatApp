@@ -238,7 +238,6 @@ C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\staticwebas
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\scopedcss\Controls\ChatControls\CreateChat\MainPage\CreateChat.razor.rz.scp.css
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\scopedcss\Controls\ChatControls\SearchHistory.razor.rz.scp.css
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\scopedcss\Pages\DialogueArea\ContentArea\DateSeparator.razor.rz.scp.css
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\obj\Debug\net7.0\scopedcss\Pages\DialogueArea\MessageCompose\MessageCompose.razor.rz.scp.css
@@ -321,3 +320,5 @@ C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\bin\Debug\net7.0\CommsWall.C
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\bin\Debug\net7.0\CommsWall.Infrastructure.dll
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\bin\Debug\net7.0\CommsWall.Core.pdb
 C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\bin\Debug\net7.0\CommsWall.Infrastructure.pdb
+C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\bin\Debug\net7.0\CommsWall.Data.Store.dll
+C:\Users\benkimz\Desktop\CommsWall\CommsWall.WebApp\bin\Debug\net7.0\CommsWall.Data.Store.pdb

@@ -1299,6 +1299,20 @@
           "bin/placeholder/CommsWall.Core.dll": {}
         }
       },
+      "CommsWall.Data.Store/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CommsWall.Core": "1.0.0",
+          "CommsWall.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommsWall.Data.Store.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommsWall.Data.Store.dll": {}
+        }
+      },
       "CommsWall.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3811,6 +3825,11 @@
       "path": "../CommsWall.Core/CommsWall.Core.csproj",
       "msbuildProject": "../CommsWall.Core/CommsWall.Core.csproj"
     },
+    "CommsWall.Data.Store/1.0.0": {
+      "type": "project",
+      "path": "../CommsWall.Data.Store/CommsWall.Data.Store.csproj",
+      "msbuildProject": "../CommsWall.Data.Store/CommsWall.Data.Store.csproj"
+    },
     "CommsWall.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../CommsWall.Infrastructure/CommsWall.Infrastructure.csproj",
@@ -3821,6 +3840,7 @@
     "net7.0": [
       "Blazored.Modal >= 7.1.0",
       "CommsWall.Core >= 1.0.0",
+      "CommsWall.Data.Store >= 1.0.0",
       "CommsWall.Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9"
     ]
@@ -3855,6 +3875,9 @@
           "projectReferences": {
             "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj": {
               "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Core\\CommsWall.Core.csproj"
+            },
+            "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Data.Store\\CommsWall.Data.Store.csproj": {
+              "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Data.Store\\CommsWall.Data.Store.csproj"
             },
             "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\benkimz\\Desktop\\CommsWall\\CommsWall.Infrastructure\\CommsWall.Infrastructure.csproj"

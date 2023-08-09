@@ -16,21 +16,23 @@ namespace CommsWall.Core.Aggregates.ChatGroupAg
 
         [Required]
         [MaxLength(255)]
-        public string GroupName { get; set; }
+        public required string GroupName { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public string GroupDescription { get; set; }
+        public required string GroupDescription { get; set; }
 
         [MaxLength]
-        public string AvatarUrl { get; set; }
+        public required string AvatarUrl { get; set; }
 
         public int CreatorID { get; set; }
 
-        public virtual ChatSubscriber Creator { get; set; }
+        public virtual required ChatSubscriber Creator { get; set; }
 
-        public virtual ICollection<GroupAdmin> GroupAdmins { get; set; }
+        public virtual ICollection<GroupAdmin> GroupAdmins { get; set; } = new List<GroupAdmin>();
 
-        public virtual ICollection<GroupMember> GroupMembers { get; set; }
+        public virtual ICollection<GroupMember> GroupMembers { get; set; } = new List<GroupMember>();
+
+        public DateTime DateCreated { get; set; }
     }
 }

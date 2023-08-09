@@ -63,6 +63,9 @@ namespace CommsWall.WebApp.Migrations
                     b.Property<int>("CreatorID")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("GroupDescription")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -157,7 +160,8 @@ namespace CommsWall.WebApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SenderId");
+                    b.HasAlternateKey("SenderId", "TargetIdentifier", "Category")
+                        .HasName("AK_User_UniqueTargetKind");
 
                     b.ToTable("ChatSessions");
                 });

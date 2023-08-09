@@ -1,9 +1,12 @@
 ﻿@page "/"
+@page "/chat"
+@page "/chat/session/{sessionId:int}"
 
 <PageTitle>ChatPro-Max</PageTitle>
 
-@* 
-    TODO: Display a screen with quick links to create new chat incase no chat is 
-    selected else display a dialogue area to start chatting *@
+<DialogueArea sessionId="@sessionId"/>
 
-<DialogueArea />
+@code{
+    [Parameter]
+    public int sessionId { get; set; }
+}

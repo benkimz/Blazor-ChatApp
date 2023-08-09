@@ -1,0 +1,198 @@
+﻿@page "/testpage"
+@using CommsWall.Core.Aggregates.ChatSubscriberAg;
+@using CommsWall.Infrastructure.ChatSessionsScreen.ManageSessions.SubTasks;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
+@using CommsWall.Infrastructure.ChatSubscribersScreen.ManageSubscribers.SubTasks;
+@using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
+@using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+
+@inject IManageChatSubscribers usersManager
+@inject IQueryChatSubscribers usersQuery
+
+@inject IManageChatSessions manageSessions 
+@inject IQueryChatSessions querySessions
+
+@inject IUserBrowserData browserData
+
+<h3>TestPage</h3>
+
+<div>
+    <button type="button" @onclick="ViewSessionData" class="btn-primary">LoggedIn User: @loggedUserInSession.ToString()</button> <br />
+    @if(LoggedUser != null)
+    {
+        <div>UserId: @LoggedUser?.Id</div>
+        <div>UserName: @LoggedUser?.UserName</div>
+        <div>DateJoined: @LoggedUser?.DateSubscribed</div>
+    }
+    else
+    {
+        <div>Not Logged In</div>
+    }
+    
+    <br />
+
+    <div class="row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Chat User: </label>
+        <div class="col-sm-10">
+            <input type="text"
+                   class="form-control form-control-lg"
+                   id="colFormLabelLg"
+                   placeholder="Find a user by name..."
+            @bind-value="UserSearchQuery"
+            @bind-value:event="oninput"
+            @onkeyup="@FindUsers" />
+            <mark><b>@UserSearchQuery</b></mark>
+            @if (usersSearchResult != null && usersSearchResult.Count() > 0)
+            {
+                @foreach (var user in usersSearchResult)
+                {
+                    <div class="card" style="width: 18rem;">
+                        <button type="button"
+                                class="btn-close"
+                                aria-label="Close"></button>
+                        <img src="@user?.AvatarUrl"
+                             class="card-img-top"
+                             alt="@user?.UserName"
+                             style="height: 35px; width: 35px; border-radius: 100%;">
+                        <a 
+                            href="testchat/private/@user?.Id"
+                            type="button" 
+                            class="btn-success">Start Chat</a>
+                        <div class="card-body">
+                            <p class="card-text">@user?.UserName</p>
+                            @if (user?.UserGroups != null)
+                            {
+                                @user?.UserGroups.Count()
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <br/><hr />
+    Select and Account to Sign In: <hr />
+    @chatSubscribers.Count().ToString()
+
+    @foreach (var user in chatSubscribers)
+    {
+        <div class="card" style="width: 18rem;">
+            <button 
+                type="button" 
+                class="btn-close" 
+                aria-label="Close"></button> <hr />
+                
+                <button type="button" class=" btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; display: block!important;"
+                    @onclick="@(() => HandleSignIn(@user.Id))">
+                                Sign In As
+                </button>
+          <img 
+              src="@user.AvatarUrl" 
+              class="card-img-top" 
+              alt="@user.UserName"
+          style="height: 35px; width: 35px; border-radius: 100%;">
+          <div class="card-body">
+            <p class="card-text">@user.UserName</p>
+                @if(user.UserGroups != null)
+                {
+                    @user.UserGroups.Count()
+                 }
+          </div>
+        </div>        
+    }
+</div>
+
+<br /><hr />
+
+<form class="row g-3">
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">UserName: </label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="inputAddress" 
+            placeholder="Benard Kimani" 
+            @bind-value="UserName"
+            @bind-value:event="oninput"/>
+    </div>
+    <div class="col-12">
+        <label for="inputAddress2" class="form-label">AvatarUrl: </label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="inputAddress2" 
+            placeholder="https://" 
+            @bind-value="AvatarUrl"
+            @bind-value:event="oninput"/>
+    </div>
+
+    <div class="col-12">
+        <button 
+            type="button"
+        @onclick="HandleSubscribe">Subscribe</button>
+    </div>
+</form>
+
+<br /> <hr />
+
+
+@code {
+    public string? UserName { get; set; }
+
+    public string? AvatarUrl { get; set; }
+
+    public IEnumerable<ChatSubscriber> chatSubscribers { get; set; } = Enumerable.Empty<ChatSubscriber>();
+
+    private void HandleSubscribe()
+    {
+        Task.FromResult(usersManager.AddSubscriber(0, UserName ?? "Anonymous", AvatarUrl ?? "https://images.freeimages.com/images/large-previews/efa/bengal-cat-in-the-sun-1335323.jpg"));
+    }
+
+    private void HandleUnsubscribe()
+    {
+        //Task.FromResult(usersManager.RemoveSubscriber());
+    }
+
+    protected override async void OnInitialized()
+    {
+        base.OnInitialized();
+        chatSubscribers = await usersManager.GetAllSubscribers();
+    }
+
+
+    private string UserSearchQuery { get; set; } = string.Empty; 
+
+    public IEnumerable<ChatSubscriber> usersSearchResult { get; set; } = Enumerable.Empty<ChatSubscriber>();
+
+    public async void FindUsers()
+    {
+        usersSearchResult = await usersQuery.FilterSubscribersByNameAsync(UserSearchQuery);
+    }
+
+    public string userData { get; set; } = string.Empty;
+
+    public ChatSubscriber? LoggedUser { get; set; }
+
+    private async void HandleSignIn(int userId)
+    {
+        userData += " : " + userId.ToString();
+
+        LoggedUser = await usersQuery.GetSubscriberByIdAsync(userId);
+
+        if(LoggedUser != null)
+        {
+            browserData.SetLoggedUserId(userId);
+        }
+    }
+
+    public int loggedUserInSession { get; set; }
+
+    public async void ViewSessionData()
+    {
+        loggedUserInSession = await browserData.GetLoggedUserIdAsync();
+        StateHasChanged();
+    }
+}

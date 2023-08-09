@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CommsWall.WebApp.Migrations
 {
     [DbContext(typeof(CommsDbContext))]
-    [Migration("20230730193814_MigrationAlpha")]
-    partial class MigrationAlpha
+    [Migration("20230803181721_MigrationAlpha-00")]
+    partial class MigrationAlpha00
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,6 +65,9 @@ namespace CommsWall.WebApp.Migrations
 
                     b.Property<int>("CreatorID")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("GroupDescription")
                         .IsRequired()
@@ -160,7 +163,8 @@ namespace CommsWall.WebApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SenderId");
+                    b.HasAlternateKey("SenderId", "TargetIdentifier", "Category")
+                        .HasName("AK_User_UniqueTargetKind");
 
                     b.ToTable("ChatSessions");
                 });

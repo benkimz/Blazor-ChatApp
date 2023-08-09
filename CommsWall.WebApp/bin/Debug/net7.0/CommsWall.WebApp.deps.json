@@ -10,6 +10,7 @@
         "dependencies": {
           "Blazored.Modal": "7.1.0",
           "CommsWall.Core": "1.0.0",
+          "CommsWall.Data.Store": "1.0.0",
           "CommsWall.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.9"
         },
@@ -675,6 +676,15 @@
           "CommsWall.Core.dll": {}
         }
       },
+      "CommsWall.Data.Store/1.0.0": {
+        "dependencies": {
+          "CommsWall.Core": "1.0.0",
+          "CommsWall.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "CommsWall.Data.Store.dll": {}
+        }
+      },
       "CommsWall.Infrastructure/1.0.0": {
         "dependencies": {
           "CommsWall.Core": "1.0.0",
@@ -1232,6 +1242,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "CommsWall.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommsWall.Data.Store/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

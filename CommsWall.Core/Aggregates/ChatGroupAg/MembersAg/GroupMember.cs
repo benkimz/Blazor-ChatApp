@@ -14,7 +14,7 @@ namespace CommsWall.Core.Aggregates.ChatGroupAg.MembersAg
 
         public int UserID { get; set; }
 
-        public virtual ChatSubscriber User { get; set; }
+        public virtual required ChatSubscriber User { get; set; }
 
         public ChatGroupRoles Role { get; set; }
 

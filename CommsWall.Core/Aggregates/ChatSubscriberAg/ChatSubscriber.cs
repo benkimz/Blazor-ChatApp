@@ -19,16 +19,16 @@ namespace CommsWall.Core.Aggregates.ChatSubscriberAg
 
         [Required]
         [MaxLength(255)]
-        public string UserName { get; set; }
+        public required string UserName { get; set; }
 
         [MaxLength(255)]
-        public string AvatarUrl { get; set; }
+        public required string AvatarUrl { get; set; }
 
-        public virtual ICollection<ChatGroup> UserGroups { get; set; }
+        public virtual ICollection<ChatGroup> UserGroups { get; set; } = new List<ChatGroup>();
 
-        public virtual ICollection<ChatSession> UserSessions { get; set; }
+        public virtual ICollection<ChatSession> UserSessions { get; set; } = new List<ChatSession>();
 
-        public virtual ICollection<Notification> Notifications { get; set; }
+        public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 
         [Required]
         public DateTime DateSubscribed { get; set; }

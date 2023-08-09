@@ -24,10 +24,10 @@ p {
   margin-bottom: 0;
 }
 body {
-  font-family: CircularStd, sans-serif;
-  font-size: 15px;
-  background: #fdfdfd;
-  color: #bdbac2;
+    font-family: CircularStd, sans-serif;
+    font-size: 15px;
+    background: #fdfdfd;
+    /* Get control over theme: color here*/
 }
 a {
   color: inherit;

@@ -1,0 +1,48 @@
+﻿@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
+@using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
+
+@using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
+@using CommsWall.WebApp.Pages.DialogueArea.TopBar
+@using CommsWall.WebApp.Pages.DialogueArea.ContentArea
+@using CommsWall.WebApp.Pages.DialogueArea.MessageCompose
+
+@using CommsWall.Core.Aggregates.ChatSessionAg;
+
+@inject IQueryChatSubscribers queryUsers
+@inject IQueryChatSessions querySessions
+
+@inject IUserBrowserData browserData
+
+<div class="chat">
+    <TopBar avatarUrl="@avatarUrl"
+            userOrGroupName="@targetName"
+            lastSeen="Active Now" />
+
+    <ContentArea sessionId="@sessionId"/>
+    
+    <MessageCompose 
+        sessionId="@sessionId"/>
+</div>
+
+@code {
+    [Parameter]
+    public int sessionId { get; set; } 
+
+    private ChatSession? session { get; set; }
+
+    private string? targetName { get; set; } 
+
+    private string? avatarUrl { get; set; } 
+
+    protected override async void OnInitialized()
+    {
+        base.OnInitialized();
+        session = await querySessions.GetSessionById(sessionId);
+        if(session?.Category == SessionCategory.Private)
+        {
+            var target = await queryUsers.GetSubscriberByIdAsync(session!.TargetIdentifier);
+            targetName = target!.UserName;
+            avatarUrl = target!.AvatarUrl;
+        }
+    }
+}

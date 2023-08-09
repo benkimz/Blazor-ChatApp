@@ -29,5 +29,19 @@ namespace CommsWall.Infrastructure.Persistence
         public DbSet<ChatMessage> ChatMessages { get; set; }
 
         public DbSet<Notification> Notifications { get; set; }
-    }
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ChatSession>(entity =>
+            {
+                entity.HasAlternateKey(e => new
+                {
+                    e.SenderId, e.TargetIdentifier, e.Category
+                })
+                .HasName("AK_User_UniqueTargetKind");
+            });
+		}
+	}
 }

@@ -1,4 +1,9 @@
-<a href="#list-chat" class="unread single active" data-toggle="list" role="tab">
+<a href="#" 
+    class="unread single active" 
+    data-toggle="list" 
+    role="tab"
+    @onclick:preventDefault
+    @onclick="@StartChatSession">
     <img class="avatar-md" src="@imageUrl" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar">
     <div class="status">
         <i class="material-icons online">fiber_manual_record</i>
@@ -28,4 +33,15 @@
 
     [Parameter]
     public string? textMessage { get; set; }
+
+    [Parameter]
+    public int sessionId { get; set; }
+
+    [Parameter]
+    public Action<int>? OnClick { get; set; }
+
+    private void StartChatSession()
+    {
+        OnClick?.Invoke(sessionId);
+    }
 }

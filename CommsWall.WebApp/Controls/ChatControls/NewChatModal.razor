@@ -1,0 +1,84 @@
+@using CommsWall.Core.Aggregates.ChatSessionAg;
+@using CommsWall.Core.Aggregates.ChatSubscriberAg;
+@using CommsWall.Infrastructure.ChatSessionsScreen.ManageSessions.SubTasks;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
+@using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
+@using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
+
+@inject IQueryChatSubscribers queryUsers
+@inject IQueryChatSessions querySessions
+@inject IManageChatSessions chatSessions
+@inject IUserBrowserData browserData
+
+@inject NavigationManager navigationManager
+
+<div class="requests">
+	<div class="title">
+		<h1>Start new chat: @loggedUserId.ToString()</h1>
+	</div>
+	<div class="content">
+		<div class="form-group">
+			<input 
+				type="text" 
+				class="form-control" 
+				placeholder="Find someone..." 
+				@oninput="@((args) => FindUser(args.Value?.ToString()))"/>
+		</div>
+		<div class="list-group" role="tablist">
+			Search results: <hr />
+			@if(searchResults != null)
+			{
+				@foreach(var user in searchResults)
+				{
+					<a href="#" 
+					class="d-flex align-items-center" 
+					@onclick="@(() => NewPrivateChat(user!.Id))">
+						<div class="me-3">
+							<img src="@user?.AvatarUrl" class="rounded-circle" alt="The display picture of @user?.UserName" width="50" height="50">
+						</div>
+						<div>
+							<span>@user?.UserName</span>
+						</div>
+					</a> <hr />
+				}
+			}
+		</div>
+	</div>
+</div>
+
+@code{
+	private int loggedUserId { get; set; }
+
+	protected override async Task OnInitializedAsync()
+	{
+		loggedUserId = await browserData.GetLoggedUserIdAsync();
+	}
+
+	private IEnumerable<ChatSubscriber> searchResults { get; set; } = Enumerable.Empty<ChatSubscriber>();
+
+	private async void FindUser(string? queryString)
+	{
+		searchResults = await queryUsers.FilterSubscribersByNameAsync(queryString!.ToString());
+		StateHasChanged();
+	}
+
+	private string ChatLink { get; set; } = string.Empty;
+
+	private async void NewPrivateChat(int targetUserId){
+		SessionCategory kind = SessionCategory.Private;
+		loggedUserId = await browserData.GetLoggedUserIdAsync();
+		int? dbSessionId = await querySessions.GetSessionId(loggedUserId, targetUserId, kind);
+		if (dbSessionId == null)
+		{
+			chatSessions.Add(kind, loggedUserId, targetUserId);
+			dbSessionId = await querySessions.GetSessionId(loggedUserId, targetUserId, kind);
+		}
+		ChatLink = "chat/";
+		if(dbSessionId != null){
+			ChatLink = "chat/session/" + dbSessionId!.ToString();
+			browserData.SetSessionId(dbSessionId!.Value);
+			StateHasChanged();
+		}
+		navigationManager.NavigateTo(ChatLink, true);
+	}
+}

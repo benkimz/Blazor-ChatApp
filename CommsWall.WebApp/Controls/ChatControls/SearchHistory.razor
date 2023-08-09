@@ -1,4 +1,5 @@
 @inject IModalService modal;
+
 <div class="search">
     <form class="form-inline position-relative">
         <input 
@@ -13,7 +14,7 @@
         </button>
     </form>
     
-    <button @onclick="@(()=>modal.Show<Modal>("Group"))"
+    <button @onclick="@(() => modal.Show<NewChatModal>())"
     class="btn create" data-toggle="modal" data-target="#exampleModalCenter">
         <i class="material-icons">person_add</i>
     </button>

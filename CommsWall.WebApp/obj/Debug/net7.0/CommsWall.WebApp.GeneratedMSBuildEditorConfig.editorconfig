@@ -20,8 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Controls/ChatControls/Modal.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ2hhdENvbnRyb2xzXE1vZGFsLnJhem9y
+[C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Controls/ChatControls/NewChatModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ2hhdENvbnRyb2xzXE5ld0NoYXRNb2RhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Pages/DialogueArea/ContentArea/ContentArea.razor]
@@ -48,13 +48,17 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Pages/TestPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Shared/ChatArea.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENoYXRBcmVhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Controls/ChatControls/CreateChat/MainPage/CreateChat.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ2hhdENvbnRyb2xzXENyZWF0ZUNoYXRcTWFpblBhZ2VcQ3JlYXRlQ2hhdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-k5zi08wg3a
 
 [C:/Users/benkimz/Desktop/CommsWall/CommsWall.WebApp/Controls/ChatControls/SearchHistory.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ2hhdENvbnRyb2xzXFNlYXJjaEhpc3RvcnkucmF6b3I=

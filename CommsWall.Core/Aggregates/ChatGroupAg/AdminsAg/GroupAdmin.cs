@@ -13,7 +13,7 @@ namespace CommsWall.Core.Aggregates.ChatGroupAg.AdminsAg
 
         public int UserID { get; set; }
 
-        public virtual ChatSubscriber User { get; set; }
+        public virtual required ChatSubscriber User { get; set; }
 
         public DateTime DatePromoted { get; set; }
     }

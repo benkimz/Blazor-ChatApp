@@ -12,6 +12,7 @@
 @using CommsWall.Core.Aggregates.ChatSessionAg;
 @using Microsoft.AspNetCore.SignalR.Client;
 
+@implements IAsyncDisposable
 @inject IJSRuntime JSRuntime
 
 @inject IQueryChatSubscribers queryUsers
@@ -43,6 +44,8 @@
 
     private HubConnection? userComms;
 
+    public bool IsConnected => userComms?.State == HubConnectionState.Connected;
+
     private string? targetName { get; set; } 
 
     private string? avatarUrl { get; set; } 
@@ -67,31 +70,39 @@
     {
         await base.OnInitializedAsync();
         LoadSessions();
-        userComms = new HubConnectionBuilder()
-        .WithUrl(navigationManager.ToAbsoluteUri("/commshub"))
-        .WithAutomaticReconnect()
-        .Build();
-        userComms.On<ChatMessage>("IncomingMessage", (newIncomingMessage) =>
-        {
-            sessionMessages?.Add(newIncomingMessage);
-            InvokeAsync(StateHasChanged);
-        });
-        try
-        {
-            await userComms.StartAsync();
-        }catch(Exception e)
-        {
-            var error = e.StackTrace; // ignore error
-        }
     }
 
     private async void LoadSessions()
     {
         userId = await browserData.GetLoggedUserIdAsync();
         StateHasChanged();
+        if (userId != 0)
+        {
+            userComms = new HubConnectionBuilder()
+                .WithUrl(navigationManager.ToAbsoluteUri("/commshub"), options =>
+                {
+                    options.Headers.Add("user", userId.ToString());
+                })
+                .WithAutomaticReconnect()
+                .Build();
+            userComms.On<int, string>("GetBroadcastedMessage", (recipientId, message) =>
+            {
+                if(userId == recipientId)
+                    sessionMessages?.Add(new ChatMessage
+                    {
+                        SenderId = session!.TargetIdentifier, 
+                        Session = session,
+                        TextMessage = message, 
+                        TimeStamp = DateTime.Now
+                    });
+                InvokeAsync(StateHasChanged);
+                InvokeAsync(ScrollChatsToBottom);
+            });
+            await userComms.StartAsync();
+        }
     }
 
-    private void HandleSendMessage(string message)
+    private async void HandleSendMessage(string message)
     {
         if (!string.IsNullOrWhiteSpace(message) && sessionId != 0)
         {
@@ -101,6 +112,13 @@
                 var (outGoneMessage, broadCastingObject) = results;
                 sessionMessages?.Add(outGoneMessage);
                 StateHasChanged();
+                if(userComms is not null)
+                {
+                    foreach (var (recipientId, receivedMessage) in broadCastingObject)
+                    {
+                        await userComms.SendAsync("BroadcastMessage", recipientId, receivedMessage.TextMessage);
+                    }
+                }
             }
         }
     }
@@ -109,5 +127,14 @@
     private async Task ScrollChatsToBottom()
     {
         await JSRuntime.InvokeAsync<object>("scrollToBottom", "content");
+    }
+
+
+    public async ValueTask DisposeAsync()
+    {
+        if (userComms is not null)
+        {
+            await userComms.DisposeAsync();
+        }
     }
 }

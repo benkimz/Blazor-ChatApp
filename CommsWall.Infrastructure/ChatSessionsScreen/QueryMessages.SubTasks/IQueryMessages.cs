@@ -10,5 +10,7 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks
     public interface IQueryMessages
     {
         Task<IEnumerable<ChatMessage>?> GetSessionMessages(int sessionId);
+
+        Task<ChatMessage?> GetLastMessage(int sessionId);
     }
 }

@@ -16,6 +16,7 @@ using CommsWall.Infrastructure.ChatSessionsScreen.ManageMessages.SubTasks;
 using CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks;
 using Microsoft.AspNetCore.ResponseCompression;
 using CommsWall.WebApp.Hubs;
+using CommsWall.Infrastructure.ChatSessionsScreen.QueryPastConversations.SubTasks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +48,10 @@ builder.Services.AddTransient<IQueryChatSessions, QueryChatSessions>();
 
 builder.Services.AddTransient<IManageMessages, ManageMessages>();
 builder.Services.AddTransient<IQueryMessages, QueryMessages>();
+
+builder.Services.AddTransient<QueryChatSessions>();
+builder.Services.AddTransient<QueryChatSubscribers>();
+builder.Services.AddTransient<IQueryPastConversations, QueryPastConversations>();
 
 builder.Services.AddScoped<IUserBrowserData, UserBrowserData>();
 // --end testing -towards --production grade phase

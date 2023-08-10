@@ -21,5 +21,10 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks
         {
             return _chatSessionsRepository.GetChatMessages(sessionId);
         }
+
+        public Task<ChatMessage?> GetLastMessage(int sessionId)
+        {
+            return _chatSessionsRepository.GetLastSessionMessage(sessionId);
+        }
     }
 }

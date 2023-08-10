@@ -37,7 +37,7 @@ namespace CommsWall.WebApp.Hubs
             {
                 return Clients.User(_commsMap[userId.ToString()]).SendAsync("GetBroadcastedMessage", userId, receivedMessage);
             }
-            Console.WriteLine("==========] Look Out: ");
+            Console.WriteLine("=====> SignalR Message send failed");
             return Task.CompletedTask;
         }
     }

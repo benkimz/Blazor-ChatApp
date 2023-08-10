@@ -112,6 +112,7 @@
                 var (outGoneMessage, broadCastingObject) = results;
                 sessionMessages?.Add(outGoneMessage);
                 StateHasChanged();
+                await ScrollChatsToBottom();
                 if(userComms is not null)
                 {
                     foreach (var recipientId in broadCastingObject)

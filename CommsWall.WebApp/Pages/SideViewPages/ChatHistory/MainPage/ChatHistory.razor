@@ -1,7 +1,6 @@
 @using CommsWall.Core.Aggregates.ChatSessionAg;
-@using CommsWall.Core.Aggregates.ChatSubscriberAg;
-@using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
-@using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
+@using CommsWall.Infrastructure.ChatSessionsScreen.QueryPastConversations.SubTasks;
+
 @using CommsWall.Infrastructure.PluginInterfaces.BrowserStorage;
 
 @using CommsWall.WebApp.Pages.SideViewPages.ChatHistory.MainFilters
@@ -9,43 +8,39 @@
 
 @using CommsWall.WebApp.Controls.ChatControls
 
+@inject IQueryPastConversations queryChatHistory
+
 @inject IUserBrowserData browserData
-@inject IQueryChatSessions querySessions
-@inject IQueryChatSubscribers queryUsers
 
 @inject NavigationManager navigationManager
 
 <div class="#" id="members">
-    <SearchHistory />
+    <SearchHistory OnSearch="@HandleSearchHistory"/>
 
     <HistoryFilters />
  						
     <div class="discussions">
-        <h1>Chat History: @sessions?.Count().ToString()</h1>
+        <h5>@((pastConversations != null && pastConversations.Count() > 0) ? "Chat History" : "No Past Conversations")</h5><hr />
         <div class="list-group" id="chats" role="tablist">
-
-            <MsgHistoryWindow 
-                imageUrl="img/avatars/avatar.jpg"
-                userName="Benard Kimani"
-                newMessages="5"
-                textMessage="filterDiscussions all unread single active"
-                stringTimeStamp="Mon 12:00 pm" />
-
-                @*<h1>--fetching from db: --userid @userId.ToString()</h1>*@
-            @if(sessions != null)
+            @if(pastConversations is not null && pastConversations.Count() > 0)
             {
-                @foreach(var history in chatHistory)
+                @foreach(var (targetSession, sessionMetaData) in pastConversations)
                 {
-                    var targetName = history["TargetName"].ToString();
-                    var avatarUrl = history["AvatarUrl"].ToString();
-                    var sessionId = (int) history["SessionId"];
-                    <MsgHistoryWindow imageUrl="@avatarUrl"
-                        userName="@targetName"
-                        newMessages="20"
-                        textMessage="... loading data..."
-                        stringTimeStamp="today"
-                        sessionId="@sessionId"
-                        OnClick="@StartChatSession"/>
+                    if (targetSession != null && sessionMetaData != null)
+                    {
+                        var targetName = sessionMetaData["TargetName"].ToString();
+                        var avatarUrl = sessionMetaData["AvatarUrl"].ToString();
+                        var sessionId = (int)sessionMetaData["SessionId"];
+                        //var latestMessage = sessionMetaData["LatestMessage"].ToString();
+                        //<h2>@latestMessage</h2>
+                        <MsgHistoryWindow imageUrl="@avatarUrl"
+                                          userName="@targetName"
+                                          newMessages="20"
+                                          textMessage="... loading data..."
+                                          stringTimeStamp="today"
+                                          sessionId="@sessionId"
+                        OnClick="@StartChatSession" />
+                    }
                 }
             }
         </div>
@@ -55,26 +50,12 @@
 @code{
     private int userId { get; set; }
 
-    private IEnumerable<ChatSession>? sessions { get; set; }
-
-    private List<Dictionary<string, object>> chatHistory { get; set; } = new List<Dictionary<string, object>>();
+    private List<Tuple<ChatSession, Dictionary<string, object>>> pastConversations { get; set; } = new List<Tuple<ChatSession, Dictionary<string, object>>>();
 
     private async void DataLoader()
     {
         userId = await browserData.GetLoggedUserIdAsync();
-        sessions = (await querySessions.GetUserSessions(userId)).ToList<ChatSession>();
-        foreach(ChatSession session in sessions)
-        {
-            Dictionary<string, object> historyObject = new Dictionary<string, object>();
-            historyObject.Add("SessionId", session.Id);
-            if(session.Category == SessionCategory.Private)
-            {
-                var user = await queryUsers.GetSubscriberByIdAsync(session.TargetIdentifier);
-                historyObject.Add("TargetName", user!.UserName);
-                historyObject.Add("AvatarUrl", user!.AvatarUrl);
-                chatHistory.Add(historyObject);
-            }
-        }
+        pastConversations = await queryChatHistory.GetConversationHistory(userId); 
         StateHasChanged();
     }
 
@@ -89,5 +70,20 @@
         string chatLink = $"chat/session/{sessionId}";
         browserData.SetSessionId(sessionId);
         navigationManager.NavigateTo(chatLink, true);
+    }
+
+    private async void HandleSearchHistory(string? filterQuery)
+    {
+        var chatHistory = await queryChatHistory.GetConversationHistory(userId);
+        if (!string.IsNullOrWhiteSpace(filterQuery))
+        {
+            pastConversations = chatHistory.Where(data => data!.Item2["TargetName"]!.ToString()!.ToLower().Contains(filterQuery!.ToLower())).ToList<Tuple<ChatSession, Dictionary<string, object>>>();
+            StateHasChanged();
+        }
+        else
+        {
+            pastConversations = chatHistory;
+            StateHasChanged();
+        }
     }
 }

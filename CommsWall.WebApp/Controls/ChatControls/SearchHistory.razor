@@ -6,10 +6,9 @@
             type="search"
             class="form-control" 
             id="people" 
-            placeholder="Find conversations..." 
-            @bind-value="filterString" 
-            @bind-value:event="oninput" />
-        <button type="button" class="btn btn-link loop" @onclick="Search">
+            placeholder="Find conversations..."  
+            @oninput="HandleSearch" />
+        <button type="button" class="btn btn-link loop" @onclick="@HandleSearchOnclick">
             <i class="fa fa-solid fa-brand fa-search"></i>
         </button>
     </form>
@@ -21,26 +20,19 @@
 </div>
 
 @code {
-    private string? filterString { get; set; }
+    private string? filterString { get; set; } = string.Empty;
 
     [Parameter]
-    public EventCallback<string> OnSearch { get; set; }
-    
-    private async Task Search()
+    public Action<string?>? OnSearch { get; set; }
+
+    private void HandleSearch(ChangeEventArgs args)
     {
-        await OnSearch.InvokeAsync(filterString);
+        filterString = args.Value?.ToString();
+        OnSearch?.Invoke(filterString);
     }
-    // start
-    @* private async Task ShowModal()
+
+    private void HandleSearchOnclick()
     {
-        var modalOptions = new ModalOptions()
-        {
-            Class = "modal-dialog-centered"
-        };
-
-        var modal = Modal.Show<CreateChat>("My Movies", modalOptions);
-        var result = await modal.Result;
-
-        // You can handle the result returned from the modal here, if needed
-    } *@
+        OnSearch?.Invoke(filterString);
+    }
 }

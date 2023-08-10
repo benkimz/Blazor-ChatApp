@@ -24,5 +24,7 @@ namespace CommsWall.Infrastructure.PluginInterfaces.ChatSessionsRp
         Tuple<ChatMessage, List<int>>? SendMessage(int sessionId, string textMessage);
 
         Task<IEnumerable<ChatMessage>?> GetChatMessages(int sessionId);
+
+        Task<ChatMessage?> GetLastSessionMessage(int sessionId);
     }
 }

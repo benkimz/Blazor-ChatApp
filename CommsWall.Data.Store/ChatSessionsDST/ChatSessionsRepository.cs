@@ -109,5 +109,10 @@ namespace CommsWall.Data.Store.ChatSessionsDST
         {
             return Task.FromResult(_context.ChatMessages.Where(msg => msg.SessionID == sessionId)?.AsEnumerable());
         }
+
+        public Task<ChatMessage?> GetLastSessionMessage(int sessionId)
+        {
+            return Task.FromResult(_context.ChatMessages.LastOrDefault(message => message.SessionID == sessionId));
+        }
     }
 }

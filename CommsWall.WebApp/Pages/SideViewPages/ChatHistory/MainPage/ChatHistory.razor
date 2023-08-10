@@ -31,13 +31,13 @@
                         var targetName = sessionMetaData["TargetName"].ToString();
                         var avatarUrl = sessionMetaData["AvatarUrl"].ToString();
                         var sessionId = (int)sessionMetaData["SessionId"];
-                        //var latestMessage = sessionMetaData["LatestMessage"].ToString();
-                        //<h2>@latestMessage</h2>
+                        var latestMessage = sessionMetaData["LatestMessage"].ToString();
+                        var lastMessageStamp = sessionMetaData["LastMessageStamp"].ToString();
                         <MsgHistoryWindow imageUrl="@avatarUrl"
                                           userName="@targetName"
                                           newMessages="20"
-                                          textMessage="... loading data..."
-                                          stringTimeStamp="today"
+                                          textMessage="@latestMessage"
+                                          stringTimeStamp="@lastMessageStamp"
                                           sessionId="@sessionId"
                         OnClick="@StartChatSession" />
                     }

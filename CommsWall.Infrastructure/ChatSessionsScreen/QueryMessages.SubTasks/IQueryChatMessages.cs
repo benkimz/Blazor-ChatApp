@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks
 {
-    public interface IQueryMessages
+    public interface IQueryChatMessages
     {
         Task<IEnumerable<ChatMessage>?> GetSessionMessages(int sessionId);
 

@@ -1,6 +1,7 @@
 ﻿using CommsWall.Core.Aggregates.ChatMessageAg;
 using CommsWall.Core.Aggregates.ChatSessionAg;
 using CommsWall.Core.Aggregates.ChatSubscriberAg;
+using CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks;
 using CommsWall.Infrastructure.ChatSessionsScreen.QuerySessions.SubTasks;
 using CommsWall.Infrastructure.ChatSubscribersScreen.QuerySubscribers.SubTasks;
 using System;
@@ -17,10 +18,13 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryPastConversations.Sub
 
         private readonly QueryChatSubscribers queryChatSubscribers;
 
-        public QueryPastConversations(QueryChatSessions queryChatSessions, QueryChatSubscribers queryChatSubscribers)
+        private readonly QueryChatMessages queryChatMessages;
+
+        public QueryPastConversations(QueryChatSessions queryChatSessions, QueryChatSubscribers queryChatSubscribers, QueryChatMessages queryChatMessages)
         {
             this.queryChatSessions = queryChatSessions;
             this.queryChatSubscribers = queryChatSubscribers;
+            this.queryChatMessages = queryChatMessages;
         }
 
         public async Task<List<Tuple<ChatSession, Dictionary<string, object>>>> GetConversationHistory(int userId)
@@ -32,6 +36,7 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryPastConversations.Sub
             {
                 foreach(ChatSession chatSession in userChatSessions)
                 {
+                    ChatMessage? latestMessage = await queryChatMessages.GetLastMessage(chatSession.Id);
                     /* query different for users and groups */
                     Dictionary<string, object> keyValuePairs = new Dictionary<string, object>();
                     if(chatSession.Category == SessionCategory.Private)
@@ -42,6 +47,8 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryPastConversations.Sub
                             keyValuePairs.Add("TargetName", targetUser!.UserName);
                             keyValuePairs.Add("AvatarUrl", targetUser!.AvatarUrl);
                             keyValuePairs.Add("SessionId", chatSession.Id);
+                            keyValuePairs.Add("LatestMessage", latestMessage != null ? latestMessage.TextMessage : "Start a New Conversation");
+                            keyValuePairs.Add("LastMessageStamp", latestMessage != null ? latestMessage.TimeStamp : DateTime.Now);
                             historyResult.Add(Tuple.Create(chatSession, keyValuePairs));
                         }
                     } // query for groups

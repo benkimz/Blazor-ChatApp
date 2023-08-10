@@ -112,7 +112,7 @@ namespace CommsWall.Data.Store.ChatSessionsDST
 
         public Task<ChatMessage?> GetLastSessionMessage(int sessionId)
         {
-            return Task.FromResult(_context.ChatMessages.LastOrDefault(message => message.SessionID == sessionId));
+            return Task.FromResult(_context.ChatMessages.OrderByDescending(s => s.Id).FirstOrDefault(message => message.SessionID == sessionId));
         }
     }
 }

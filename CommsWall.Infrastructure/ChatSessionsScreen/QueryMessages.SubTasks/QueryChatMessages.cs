@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace CommsWall.Infrastructure.ChatSessionsScreen.QueryMessages.SubTasks
 {
-    public class QueryMessages : IQueryMessages
+    public class QueryChatMessages : IQueryChatMessages
     {
         private readonly IChatSessionsRepository _chatSessionsRepository;
 
-        public QueryMessages(IChatSessionsRepository chatSessionsRepository)
+        public QueryChatMessages(IChatSessionsRepository chatSessionsRepository)
         {
             _chatSessionsRepository = chatSessionsRepository;
         }

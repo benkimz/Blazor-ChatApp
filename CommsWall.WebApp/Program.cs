@@ -47,10 +47,11 @@ builder.Services.AddScoped<IManageChatSessions, ManageChatSessions>();
 builder.Services.AddTransient<IQueryChatSessions, QueryChatSessions>();
 
 builder.Services.AddTransient<IManageMessages, ManageMessages>();
-builder.Services.AddTransient<IQueryMessages, QueryMessages>();
+builder.Services.AddTransient<IQueryChatMessages, QueryChatMessages>();
 
 builder.Services.AddTransient<QueryChatSessions>();
 builder.Services.AddTransient<QueryChatSubscribers>();
+builder.Services.AddTransient<QueryChatMessages>();
 builder.Services.AddTransient<IQueryPastConversations, QueryPastConversations>();
 
 builder.Services.AddScoped<IUserBrowserData, UserBrowserData>();

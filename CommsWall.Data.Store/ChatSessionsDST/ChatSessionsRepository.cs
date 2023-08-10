@@ -61,13 +61,13 @@ namespace CommsWall.Data.Store.ChatSessionsDST
             return Task.FromResult(session?.Id);
 		}
 
-        public Tuple<ChatMessage, Dictionary<int, ChatMessage>>? SendMessage(int sessionId, string textMessage)
+        public Tuple<ChatMessage, List<int>>? SendMessage(int sessionId, string textMessage)
         {
             ChatSession? session = _context.ChatSessions.Find(sessionId);
             if (session != null)
             {
                 ChatMessage? ComposedMessage, MessageToDeliver;
-                Dictionary<int, ChatMessage> BroadCastingObject = new Dictionary<int, ChatMessage>();
+                List<int> TargetUsersCollection = new List<int>();
                 
                 if (session!.Category == SessionCategory.Private)
                 {
@@ -95,10 +95,10 @@ namespace CommsWall.Data.Store.ChatSessionsDST
                             TimeStamp = DateTime.Now
                         };
                         recipientSession.Messages.Add(MessageToDeliver);
-                        BroadCastingObject.Add(recipientSession.SenderId, MessageToDeliver);
+                        TargetUsersCollection.Add(recipientSession.SenderId);
                     }
                     _context.SaveChanges();
-                   return Tuple.Create(ComposedMessage, BroadCastingObject);
+                   return Tuple.Create(ComposedMessage, TargetUsersCollection);
                 }
                 // Add group config
             }

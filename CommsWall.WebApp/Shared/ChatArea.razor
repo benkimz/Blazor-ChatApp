@@ -106,7 +106,7 @@
     {
         if (!string.IsNullOrWhiteSpace(message) && sessionId != 0)
         {
-            Tuple<ChatMessage, Dictionary<int, ChatMessage>>? results = comms.SendMessage(sessionId, message);
+            Tuple<ChatMessage, List<int>>? results = comms.SendMessage(sessionId, message);
             if(results != null)
             {
                 var (outGoneMessage, broadCastingObject) = results;
@@ -114,9 +114,9 @@
                 StateHasChanged();
                 if(userComms is not null)
                 {
-                    foreach (var (recipientId, receivedMessage) in broadCastingObject)
+                    foreach (var recipientId in broadCastingObject)
                     {
-                        await userComms.SendAsync("BroadcastMessage", recipientId, receivedMessage.TextMessage);
+                        await userComms.SendAsync("BroadcastMessage", recipientId, outGoneMessage.TextMessage);
                     }
                 }
             }

@@ -18,7 +18,7 @@ namespace CommsWall.Infrastructure.ChatSessionsScreen.ManageMessages.SubTasks
             _chatSessionsRepository = chatSessionsRepository;
         }
 
-        public Tuple<ChatMessage, Dictionary<int, ChatMessage>>? SendMessage(int sessionId, string textMessage)
+        public Tuple<ChatMessage, List<int>>? SendMessage(int sessionId, string textMessage)
         {
             return _chatSessionsRepository.SendMessage(sessionId, textMessage);
         }
